@@ -1,0 +1,2512 @@
+
+        udp 829 Bytes IN from 10.242.177.1:11002
+INVITE sip:4032902109@bw3.che.broadsoft.com:5060 SIP/2.0
+Via: SIP/2.0/UDP 10.242.177.1:11002;branch=z9hG4bK3776063152560x81000001
+From:  <sip:3602131002@bw3.che.broadsoft.com:5060;user=phone>;tag=667104-1517690x81000001
+To: <sip:4032902109@bw3.che.broadsoft.com:5060>
+Call-ID: 747917-9590130x81000001@10.242.177.1
+CSeq: 87 INVITE
+Supported: 100rel, replaces, timer
+Max-Forwards: 70
+Accept: application/sdp
+Allow: INFO, INVITE, ACK, CANCEL, OPTIONS, BYE, UPDATE, REFER, NOTIFY
+Contact: <sip:3602131002@10.242.177.1:11002;transport=udp>
+Content-Type: application/sdp
+Content-Length: 229
+
+v=0
+o=HammerFXIP 1532103231 1532103231 IN IP4 10.242.177.1
+s=SIP Call
+c=IN IP4 10.242.177.1
+t=0 0
+m=audio 8002 RTP/AVP 0 8 101
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:101 telephone-event/8000
+a=fmtp:101 0-15
+
+
+2018.07.20 21:43:51:738 IST | Info       | Sip | +913602131002 | callhalf-164277:0 | 5:2
+
+        udp 312 Bytes OUT to 10.242.177.1:11002
+SIP/2.0 100 Trying
+Via:SIP/2.0/UDP 10.242.177.1:11002;branch=z9hG4bK3776063152560x81000001
+From:<sip:3602131002@bw3.che.broadsoft.com:5060;user=phone>;tag=667104-1517690x81000001
+To:<sip:4032902109@bw3.che.broadsoft.com:5060>
+Call-ID:747917-9590130x81000001@10.242.177.1
+CSeq:87 INVITE
+Content-Length:0
+
+
+
+2018.07.20 21:43:51:738 IST | Info       | CallP | SIP Endpoint | +913602131002 | vancouver | callhalf-164277:0 | 5:2
+
+        Processing Event: com.broadsoft.events.sip.SipInviteEvent
+
+2018.07.20 21:43:51:738 IST | Info       | CallP | SIP Endpoint | +913602131002 | vancouver | callhalf-164277:0 | 5:2
+
+        call: 1  old State: IDLE  new State: INVITING
+
+2018.07.20 21:43:51:738 IST | Info       | CallP | SIP Endpoint | +913602131002 | vancouver | callhalf-164277:0 | 5:2
+
+        Transforming Event: com.broadsoft.events.sip.SipInviteEvent
+
+2018.07.20 21:43:51:739 IST | FieldDebug | CallP | SIP Endpoint | +913602131002 | vancouver | callhalf-164277:0 | 5:2
+
+        SipEndpoint.forkingSupportType set to : MULTIPLE_DIALOGS_WITH_ERROR_CORRECTION, supportMultipleDialogs() = true, suppressPreconditions() =  true
+
+2018.07.20 21:43:51:739 IST | FieldDebug | CallP | SIP Endpoint | +913602131002 | vancouver | callhalf-164277:0 | 5:2
+
+        SipEndpoint.support199 set to : false
+
+2018.07.20 21:43:51:739 IST | Info       | CallP | SIP Endpoint | +913602131002 | vancouver | callhalf-164277:0 | 5:2
+
+        EndpointConnection <dialogID = null> old State: IDLE  new State: NEGOTIATING_WAITING_FOR_ANSWER
+
+2018.07.20 21:43:51:740 IST | Info       | CallP | Call Manager | +913602131002 | vancouver | callhalf-164277 | 5:2
+
+        Processing Event: com.broadsoft.events.iwp.ConnectRequestEvent {SipEndpoint.callhalf-164277:0,CHCallManager.callhalf-164277}
+
+2018.07.20 21:43:51:740 IST | Info       | CallP | SIP Endpoint | +913602131002 | vancouver | callhalf-164277:0 | 5:2
+
+        old State: IDLE  new State: ALERTING
+
+2018.07.20 21:43:51:740 IST | FieldDebug | Generic
+
+        BroadWorksAnywhereSubscriberData: user va1002 has BA service assigned with no ba location provisioned. bwas.ba_location
+
+2018.07.20 21:43:51:740 IST | Info       | Generic
+
+        Agent Availability for va1002@bw3.che.broadsoft.com (1002) set to BUSY_OFFHOOK
+
+2018.07.20 21:43:51:741 IST | Info       | CallP | Call | +913602131002 | vancouver | callhalf-164277:0 | 5:2
+
+        Processing Event: com.broadsoft.events.callhalf.InvitationEvent {CHCallManager.callhalf-164277,CHCall.callhalf-164277:0}
+
+2018.07.20 21:43:51:741 IST | Info       | CallP | Call | +913602131002 | vancouver | callhalf-164277:0 | 5:2
+
+        CHCallConnection <dialogID = null> old State: IDLE  new State: NEGOTIATING_WAITING_FOR_ANSWER
+
+2018.07.20 21:43:51:744 IST | Info       | CallP | Call | +913602131002 | vancouver | callhalf-164277:0 | 5:2
+
+        Event: com.broadsoft.events.callhalf.InvitationEvent
+        Consumed by: com.broadsoft.services.translation.TranslationServiceOrigInstance
+
+2018.07.20 21:43:51:744 IST | Info       | CallP | Call Manager | +913602131002 | vancouver | callhalf-164277 | 5:2
+
+        Processing Event: com.broadsoft.events.eventnotification.GenerateNotifyEvent {SessionKey.callhalf-164277,CHCallManager.callhalf-164277}
+
+2018.07.20 21:43:51:744 IST | Info       | CallP | Call | +913602131002 | vancouver | callhalf-164277:0 | 5:2
+
+        Processing Service Event: com.broadsoft.events.services.translation.TranslationResultEvent
+
+2018.07.20 21:43:51:744 IST | FieldDebug | CallP | Call | +913602131002 | vancouver | callhalf-164277:0 | 5:2
+
+        Location-Based Calling Data
+        Network: Roaming Disabled
+        Zone: Zones Disabled
+
+2018.07.20 21:43:51:744 IST | Info       | CallP | Service | Preferred Carrier User | +913602131002 | vancouver | callhalf-164277:0 | 5:2
+
+        [Call Type/Selected Carrier/CSEL/CIC1(U)/CIC2(U)/CIC3(U)] = [/+/noind/+/+/+]
+
+2018.07.20 21:43:51:758 IST | Info       | NameService | 5:2
+
+        NameService lookup result for name=che-bw3-ns2.c.bsft-rnd-qa.internal, recordType=ANameRecord: RecordSet: source=DNS server 169.254.169.254, records=[[DnsJavaANameRecord: address=che-bw3-ns2.c.bsft-rnd-qa.internal./10.242.168.20]]
+
+2018.07.20 21:43:51:758 IST | Info       | CallP | Service | TranslationManager | +913602131002 | vancouver | callhalf-164277:0 | 5:2
+
+        Network Device Selected: 4032902109@che-bw3-ns2.c.bsft-rnd-qa.internal:5060
+
+2018.07.20 21:43:51:758 IST | Info       | CallP | Call | +913602131002 | vancouver | callhalf-164277:0 | 5:2
+
+        Event: com.broadsoft.events.services.translation.TranslationResultEvent
+        Consumed by: com.broadsoft.apm.callp.components.TranslationManagerCallImpl
+
+2018.07.20 21:43:51:758 IST | Info       | CallP | SIP Endpoint | +913602131002 | vancouver | callhalf-164277:1 | 5:2
+
+        Transforming Event: com.broadsoft.events.iwp.ConnectRequestEvent {CHCallService.callhalf-164277:0,SipEndpoint.callhalf-164277:1}
+
+2018.07.20 21:43:51:759 IST | Info       | CallP | SIP Endpoint | +913602131002 | vancouver | callhalf-164277:1 | 5:2
+
+        call: 1  old State: IDLE  new State: INVITING
+
+2018.07.20 21:43:51:759 IST | Info       | Sip | +913602131002 | callhalf-164277:1 | 5:2
+
+        udp 977 Bytes OUT to 10.242.168.20:5060
+INVITE sip:4032902109@che-bw3-ns2.c.bsft-rnd-qa.internal:5060;user=phone;transport=udp SIP/2.0
+Via:SIP/2.0/UDP 10.242.168.15;branch=z9hG4bKBroadWorks.-1f0ofdt-10.242.168.20V5060-0-473695368-380612695-1532103231758-
+From:"vanc1002 vancouver"<sip:+913602131002@10.242.168.15;user=phone>;tag=380612695-1532103231758-
+To:<sip:4032902109@che-bw3-ns2.c.bsft-rnd-qa.internal:5060;user=phone>
+Call-ID:BW214351758200718308136646@10.242.168.15
+CSeq:473695368 INVITE
+Contact:<sip:10.242.168.15:5060>
+P-Asserted-Identity:"vanc1002 vancouver"<sip:+913602131002@10.242.168.15;user=phone>
+Privacy:none
+X-BroadWorks-Correlation-Info:5:2
+Allow:ACK,BYE,CANCEL,INFO,INVITE,OPTIONS,PRACK,REFER,NOTIFY
+Supported:
+Max-Forwards:5
+Content-Type:application/sdp
+Content-Length:205
+
+v=0
+o=BroadWorks 32 1 IN IP4 10.242.177.1
+s=-
+c=IN IP4 10.242.177.1
+t=0 0
+m=audio 8002 RTP/AVP 0 8 101
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:101 telephone-event/8000
+a=fmtp:101 0-15
+
+
+2018.07.20 21:43:52:758 IST | Info       | CallP | Call | +913602131002 | vancouver | callhalf-164277:0 | 5:2
+
+        Processing Service Event: com.broadsoft.events.timer.TimerTimeOutEvent(274)
+
+2018.07.20 21:43:52:771 IST | Info       | NameService | 5:2
+
+        NameService lookup result for name=che-bw3-ns1.c.bsft-rnd-qa.internal, recordType=ANameRecord: RecordSet: source=DNS server 169.254.169.254, records=[[DnsJavaANameRecord: address=che-bw3-ns1.c.bsft-rnd-qa.internal./10.242.168.18]]
+
+2018.07.20 21:43:52:771 IST | Info       | CallP | Service | TranslationManager | +913602131002 | vancouver | callhalf-164277:0 | 5:2
+
+        Route Advance to: 4032902109@che-bw3-ns1.c.bsft-rnd-qa.internal:5060
+
+2018.07.20 21:43:52:771 IST | Info       | CallP | Call | +913602131002 | vancouver | callhalf-164277:0 | 5:2
+
+        Event: com.broadsoft.events.timer.TimerTimeOutEvent(274)
+        Consumed by: com.broadsoft.apm.callp.components.TranslationManagerCallImpl
+
+2018.07.20 21:43:52:771 IST | Info       | CallP | SIP Endpoint | +913602131002 | vancouver | callhalf-164277:1 | 5:2
+
+        Transforming Event: com.broadsoft.events.iwp.EndpointReleaseEvent {CHCallService.callhalf-164277:0,SipEndpoint.callhalf-164277:1}
+
+2018.07.20 21:43:52:771 IST | Info       | CallP | SIP Endpoint | +913602131002 | vancouver | callhalf-164277:1 | 5:2
+
+        call: 1  old State: INVITING  new State: RELEASED
+
+2018.07.20 21:43:52:772 IST | Info       | CallP | SIP Endpoint | +913602131002 | vancouver | callhalf-164277:2 | 5:2
+
+        Transforming Event: com.broadsoft.events.iwp.ConnectRequestEvent {CHCallService.callhalf-164277:0,SipEndpoint.callhalf-164277:2}
+
+2018.07.20 21:43:52:772 IST | Info       | CallP | SIP Endpoint | +913602131002 | vancouver | callhalf-164277:2 | 5:2
+
+        call: 1  old State: IDLE  new State: INVITING
+
+2018.07.20 21:43:52:774 IST | Info       | Sip | +913602131002 | callhalf-164277:2 | 5:2
+
+        udp 978 Bytes OUT to 10.242.168.18:5060
+INVITE sip:4032902109@che-bw3-ns1.c.bsft-rnd-qa.internal:5060;user=phone;transport=udp SIP/2.0
+Via:SIP/2.0/UDP 10.242.168.15;branch=z9hG4bKBroadWorks.-1f0ofdt-10.242.168.18V5060-0-473695875-713498491-1532103232772-
+From:"vanc1002 vancouver"<sip:+913602131002@10.242.168.15;user=phone>;tag=713498491-1532103232772-
+To:<sip:4032902109@che-bw3-ns1.c.bsft-rnd-qa.internal:5060;user=phone>
+Call-ID:BW214352772200718-532664104@10.242.168.15
+CSeq:473695875 INVITE
+Contact:<sip:10.242.168.15:5060>
+P-Asserted-Identity:"vanc1002 vancouver"<sip:+913602131002@10.242.168.15;user=phone>
+Privacy:none
+X-BroadWorks-Correlation-Info:5:2
+Allow:ACK,BYE,CANCEL,INFO,INVITE,OPTIONS,PRACK,REFER,NOTIFY
+Supported:
+Max-Forwards:5
+Content-Type:application/sdp
+Content-Length:205
+
+v=0
+o=BroadWorks 32 1 IN IP4 10.242.177.1
+s=-
+c=IN IP4 10.242.177.1
+t=0 0
+m=audio 8002 RTP/AVP 0 8 101
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:101 telephone-event/8000
+a=fmtp:101 0-15
+
+
+2018.07.20 21:43:52:779 IST | Info       | Sip | +913602131002 | callhalf-164277:2 | 5:2
+
+        udp 693 Bytes IN from 10.242.168.18:33046
+SIP/2.0 302 Moved temporarily
+Via:SIP/2.0/UDP 10.242.168.15;branch=z9hG4bKBroadWorks.-1f0ofdt-10.242.168.18V5060-0-473695875-713498491-1532103232772-
+From:"vanc1002 vancouver"<sip:+913602131002@10.242.168.15;user=phone>;tag=713498491-1532103232772-
+To:<sip:4032902109@che-bw3-ns1.c.bsft-rnd-qa.internal:5060;user=phone>;tag=1334239846-1532103232777
+Call-ID:BW214352772200718-532664104@10.242.168.15
+CSeq:473695875 INVITE
+Contact:<sip:+914032902109@10.242.168.15:5060;user=phone;net-ind=IntraAS>;q=0.5;ct=LO;ton=PUBLIC;group-id="calgary";cat=LOCAL,<sip:+914032902109@10.242.168.16:5060;user=phone;net-ind=IntraAS>;q=0.25;ct=LO;ton=PUBLIC;group-id="calgary";cat=LOCAL
+Content-Length:0
+
+
+
+2018.07.20 21:43:52:779 IST | Info       | CallP | SIP Endpoint | +913602131002 | vancouver | callhalf-164277:2 | 5:2
+
+        Processing SipEvent: com.broadsoft.events.sip.Sip300RedirectionEvent
+
+2018.07.20 21:43:52:779 IST | Info       | CallP | SIP Endpoint | +913602131002 | vancouver | callhalf-164277:2 | 5:2
+
+        call: 1  old State: INVITING  new State: RELEASED
+
+2018.07.20 21:43:52:779 IST | Info       | CallP | SIP Endpoint | +913602131002 | vancouver | callhalf-164277:2 | 5:2
+
+        Transforming Event: com.broadsoft.events.sip.Sip300RedirectionEvent
+
+2018.07.20 21:43:52:779 IST | Info       | CallP | Call | +913602131002 | vancouver | callhalf-164277:0 | 5:2
+
+        Processing Service Event: com.broadsoft.events.callhalf.RedirectionEvent
+
+2018.07.20 21:43:52:780 IST | Info       | Sip | +913602131002 | callhalf-164277:2 | 5:2
+
+        udp 522 Bytes OUT to 10.242.168.18:5060
+ACK sip:4032902109@che-bw3-ns1.c.bsft-rnd-qa.internal:5060;user=phone;transport=udp SIP/2.0
+Via:SIP/2.0/UDP 10.242.168.15;branch=z9hG4bKBroadWorks.-1f0ofdt-10.242.168.18V5060-0-473695875-713498491-1532103232772-
+From:"vanc1002 vancouver"<sip:+913602131002@10.242.168.15;user=phone>;tag=713498491-1532103232772-
+To:<sip:4032902109@che-bw3-ns1.c.bsft-rnd-qa.internal:5060;user=phone>;tag=1334239846-1532103232777
+Call-ID:BW214352772200718-532664104@10.242.168.15
+CSeq:473695875 ACK
+Max-Forwards:5
+Content-Length:0
+
+
+
+2018.07.20 21:43:52:780 IST | Info       | CallP | Call | +913602131002 | vancouver | callhalf-164277:0 | 5:2
+
+        Address = 4032902109 , Call Type = Network
+
+2018.07.20 21:43:52:781 IST | Info       | CallP | Call | +913602131002 | vancouver | callhalf-164277:0 | 5:2
+
+        Event: com.broadsoft.events.callhalf.RedirectionEvent
+        Consumed by: com.broadsoft.apm.callp.components.TranslationManagerCallImpl
+
+2018.07.20 21:43:52:781 IST | Info       | CallP | Call | +913602131002 | vancouver | callhalf-164277:0 | 5:2
+
+        Processing Event: com.broadsoft.apm.asservicemanagement.ResumeEvent
+
+2018.07.20 21:43:52:781 IST | Info       | CallP | Call | +913602131002 | vancouver | callhalf-164277:0 | 5:2
+
+        Resuming Event: com.broadsoft.events.callhalf.InvitationEvent {CHCallManager.callhalf-164277,CHCall.callhalf-164277:0}
+        After Service Instance: com.broadsoft.services.translation.TranslationServiceOrigInstance
+
+2018.07.20 21:43:52:782 IST | FieldDebug | CallP | Service | HCB | +913602131002 | vancouver | callhalf-164277:0 | 5:2
+
+        Apply profile HCBProfile default origination action: Allow
+
+2018.07.20 21:43:52:783 IST | Info       | CallP | Call | +913602131002 | vancouver | callhalf-164277:0 | 5:2
+
+        old State: IDLE  new State: ALERTING
+
+2018.07.20 21:43:52:783 IST | Info       | Accounting | localHost20 | 5:2
+
+        CALL ORIGINATION ACCOUNTING EVENT
+        Time Stamp: Fri Jul 20 21:43:51 IST 2018 (1532103231735)
+        Accounting ID: 164277:0
+        External Tracking ID: 5:2
+        Local Address: +913602131002@10.242.168.15;user=phone
+        Local Group Name: vancouver
+        Remote Address: 4032902109@10.242.168.15;user=phone
+        Call Type: Network
+        Service Provider ID: WestCoastSP
+        Reseller ID: null
+        Time Zone: Asia/Calcutta
+        Local Group Address: +913602131050
+        Local Department Name: null
+        First Redirecting Number: null
+        First RN Pres. Indicator: PUBLIC
+        First Redirecting Reason: null
+        Last Redirecting Number : null
+        Last RN Pres. Indicator : PUBLIC
+        Last Redirecting Reason: null
+        P-Charging-Vector: null
+        Output Call Log: false
+        UserId: va1002@bw3.che.broadsoft.com
+        Can have device: true
+        P-Charging-Function-Addresses: null
+        Related Call Id Name: null
+        Related Call Id Reason: null
+        Primary Device Lineport: 3602131002@bw3.che.broadsoft.com
+        Prepaid Event Handler Key: null
+        Virtual On-Net Type: null
+        Office Zone: null
+        Primary Zone: null
+        Roaming MSC Address: null
+        Charge Number: null
+        StateReplicationState: STANDALONE
+        rfSessionID: che-bw3-as1;1532103232783;10|1
+        Calling Presentation Address: +913602131002@10.242.168.15;user=phone
+        Calling Asserted Identity: name: vanc1002 vancouver, address: +913602131002@10.242.168.15;user=phone
+        Trunk Group Name: null
+        Trunk Group Info: null
+        Calling Party Addresses List: null
+        Called Party Address: null
+        Route List DN: null
+        Network Call Within Enterprise: false
+        Gets Info: null
+        Service Policy Uid: null
+        IMS Enabled: false
+        Automatic Collect Call type: null
+        Dialed Address: 4032902109@10.242.168.15;user=phone
+        Calling Number: +913602131002@10.242.168.15;user=phone
+        Calling Number Pres. Indicator: PUBLIC
+        Local Address Override: null
+        Local Time Zone Override: null
+        Local Dept Name Override: null
+        Local User Id Override: null
+        Calling Party Category: Ordinary
+        Access CallID: 747917-9590130x81000001@10.242.177.1
+        Called Party Name: null
+        Called Pres. Indicator: PUBLIC
+        P-Access-Network-Info: null
+        Configurable CLID: null
+        Origination Method:  Not set 
+        Outside Access Code: null
+        Received Calling Number: null
+        Local User Agent: null
+        LocalSDP: present (OFFER)
+        numberPortabilityTranslationResult: null
+        topmostRouteEntry: null
+        receivedChargingVector: null
+
+2018.07.20 21:43:52:784 IST | Info       | Sip | +914032902109 | callhalf-164279 | 5:2
+
+        $ new CHSS > +914032902109 > callhalf-164277:0 > callhalf-164279
+
+2018.07.20 21:43:52:784 IST | Info       | CallP | Call Manager | +914032902109 | PSTN | callhalf-164279 | 5:2
+
+        Processing Event: com.broadsoft.events.callhalf.TerminationEvent : callhalf-164277:0 {CHCall.callhalf-164277:0,CHCallManager.callhalf-164279}
+
+2018.07.20 21:43:52:784 IST | Info       | CallP | Call | +914032902109 | PSTN | callhalf-164279:0 | 5:2
+
+        Processing Event: com.broadsoft.events.callhalf.InvitationEvent {CHCall.callhalf-164277:0,CHCall.callhalf-164279:0}
+
+2018.07.20 21:43:52:784 IST | Info       | CallP | Call | +914032902109 | PSTN | callhalf-164279:0 | 5:2
+
+        CHCallConnection <dialogID = null> old State: IDLE  new State: NEGOTIATING_WAITING_FOR_ANSWER
+
+2018.07.20 21:43:52:786 IST | Info       | CallP | Call | +914032902109 | PSTN | callhalf-164279:0 | 5:2
+
+        old State: IDLE  new State: ALERTING
+
+2018.07.20 21:43:52:786 IST | Info       | CallP | Call Manager | +914032902109 | PSTN | callhalf-164279 | 5:2
+
+        Processing Event: com.broadsoft.events.callhalf.InvitationEvent {CHCall.callhalf-164279:0,CHCallManager.callhalf-164279}
+
+2018.07.20 21:43:52:786 IST | Info       | CallP | Service | Network Routing | +914032902109 | PSTN | callhalf-164279:0 | 5:2
+
+        Redirection to: +914032902109@10.242.168.15:5060
+
+2018.07.20 21:43:52:786 IST | Info       | CallP | Call Manager | +914032902109 | PSTN | callhalf-164279 | 5:2
+
+        Event: com.broadsoft.events.callhalf.InvitationEvent
+        Consumed by: com.broadsoft.services.networkrouting.NetworkRoutingServiceInstance
+
+2018.07.20 21:43:52:786 IST | Info       | CallP | Call Manager | +914032902109 | PSTN | callhalf-164279 | 5:2
+
+        Processing Event: com.broadsoft.apm.asservicemanagement.ResumeEvent {CHCall.callhalf-164279:0,CHCallManager.callhalf-164279}
+
+2018.07.20 21:43:52:786 IST | Info       | CallP | Call Manager | +914032902109 | PSTN | callhalf-164279 | 5:2
+
+        Resuming Event: com.broadsoft.events.callhalf.InvitationEvent {CHCall.callhalf-164279:0,CHCallManager.callhalf-164279}
+        After Service Instance: com.broadsoft.services.networkrouting.NetworkRoutingServiceInstance
+
+2018.07.20 21:43:52:786 IST | Info       | CallP | SIP Endpoint | +914032902109 | PSTN | callhalf-164279:0 | 5:2
+
+        old State: IDLE  new State: ALERTING
+
+2018.07.20 21:43:52:787 IST | Info       | CallP | SIP Endpoint | +914032902109 | PSTN | callhalf-164279:0 | 5:2
+
+        EndpointConnection <dialogID = null> old State: IDLE  new State: NEGOTIATING_WAITING_FOR_ANSWER
+
+2018.07.20 21:43:52:787 IST | Info       | CallP | SIP Endpoint | +914032902109 | PSTN | callhalf-164279:0 | 5:2
+
+        Transforming Event: com.broadsoft.events.iwp.ConnectRequestEvent {CHCallManager.callhalf-164279,SipEndpoint.callhalf-164279:0}
+
+2018.07.20 21:43:52:788 IST | Info       | CallP | SIP Endpoint | +914032902109 | PSTN | callhalf-164279:0 | 5:2
+
+        call: 1  old State: IDLE  new State: INVITING
+
+2018.07.20 21:43:52:788 IST | Info       | CallP | Call Manager | +914032902109 | PSTN | callhalf-164279 | 5:2
+
+        Processing Event: com.broadsoft.events.callhalf.AccountingInfoEvent {SipEndpoint.callhalf-164279:0,CHCallManager.callhalf-164279}
+
+2018.07.20 21:43:52:788 IST | Info       | CallP | Call | +914032902109 | PSTN | callhalf-164279:0 | 5:2
+
+        Processing Event: com.broadsoft.events.callhalf.AccountingInfoEvent {CHCallManager.callhalf-164279,CHCall.callhalf-164279:0}
+
+2018.07.20 21:43:52:788 IST | Info       | CallP | Call | +913602131002 | vancouver | callhalf-164277:0 | 5:2
+
+        Processing Event: com.broadsoft.events.callhalf.LinkRemoteCallEvent : callhalf-164279:0 {CHCall.callhalf-164279:0,CHCall.callhalf-164277:0}
+
+2018.07.20 21:43:52:788 IST | Info       | CallP | Call | +913602131002 | vancouver | callhalf-164277:0 | 5:2
+
+        Processing Event: com.broadsoft.events.callhalf.AccountingInfoEvent {CHCall.callhalf-164279:0,CHCall.callhalf-164277:0}
+
+2018.07.20 21:43:52:788 IST | Info       | Sip | +914032902109 | callhalf-164279:0 | 5:2
+
+        udp 1097 Bytes OUT to 10.242.168.15:5060
+INVITE sip:+914032902109@10.242.168.15:5060;user=phone SIP/2.0
+Via:SIP/2.0/UDP 10.242.168.15;branch=z9hG4bKBroadWorks.-1f0ofdt-10.242.168.15V5060-0-473695882-378253326-1532103232787-
+From:"vanc1002 vancouver"<sip:+913602131002@10.242.168.15;user=phone>;tag=378253326-1532103232787-
+To:<sip:+914032902109@10.242.168.15:5060;user=phone>
+Call-ID:BW214352787200718-418938630@10.242.168.15
+CSeq:473695882 INVITE
+Contact:<sip:10.242.168.15:5060>
+P-Asserted-Identity:"vanc1002 vancouver"<sip:+913602131002@10.242.168.15;user=phone>
+Privacy:none
+Supported:100rel
+Allow:ACK,BYE,CANCEL,INFO,INVITE,OPTIONS,PRACK,REFER,NOTIFY,UPDATE
+X-BroadWorks-Correlation-Info:5:2
+Accept:application/gtd,application/media_control+xml,application/sdp,application/vnd.etsi.sci+xml,application/x-broadworks-call-center+xml,multipart/mixed
+Max-Forwards:5
+Content-Type:application/sdp
+Content-Length:205
+
+v=0
+o=BroadWorks 32 1 IN IP4 10.242.177.1
+s=-
+c=IN IP4 10.242.177.1
+t=0 0
+m=audio 8002 RTP/AVP 0 8 101
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:101 telephone-event/8000
+a=fmtp:101 0-15
+
+
+2018.07.20 21:43:52:789 IST | Info       | Sip | 6:2
+
+        External tracking ID generated for call session
+
+2018.07.20 21:43:52:789 IST | Info       | Sip | +913602131002 | callhalf-164283 | 6:2
+
+        $ new CHSS > +913602131002 >  > callhalf-164283
+
+2018.07.20 21:43:52:791 IST | Info       | Sip | +913602131002 | callhalf-164283:0 | 6:2
+
+        udp 1097 Bytes IN from 10.242.168.15:5060
+INVITE sip:+914032902109@10.242.168.15:5060;user=phone SIP/2.0
+Via:SIP/2.0/UDP 10.242.168.15;branch=z9hG4bKBroadWorks.-1f0ofdt-10.242.168.15V5060-0-473695882-378253326-1532103232787-
+From:"vanc1002 vancouver"<sip:+913602131002@10.242.168.15;user=phone>;tag=378253326-1532103232787-
+To:<sip:+914032902109@10.242.168.15:5060;user=phone>
+Call-ID:BW214352787200718-418938630@10.242.168.15
+CSeq:473695882 INVITE
+Contact:<sip:10.242.168.15:5060>
+P-Asserted-Identity:"vanc1002 vancouver"<sip:+913602131002@10.242.168.15;user=phone>
+Privacy:none
+Supported:100rel
+Allow:ACK,BYE,CANCEL,INFO,INVITE,OPTIONS,PRACK,REFER,NOTIFY,UPDATE
+X-BroadWorks-Correlation-Info:5:2
+Accept:application/gtd,application/media_control+xml,application/sdp,application/vnd.etsi.sci+xml,application/x-broadworks-call-center+xml,multipart/mixed
+Max-Forwards:5
+Content-Type:application/sdp
+Content-Length:205
+
+v=0
+o=BroadWorks 32 1 IN IP4 10.242.177.1
+s=-
+c=IN IP4 10.242.177.1
+t=0 0
+m=audio 8002 RTP/AVP 0 8 101
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:101 telephone-event/8000
+a=fmtp:101 0-15
+
+
+2018.07.20 21:43:52:791 IST | Info       | Sip | +913602131002 | callhalf-164283:0 | 6:2
+
+        udp 389 Bytes OUT to 10.242.168.15:5060
+SIP/2.0 100 Trying
+Via:SIP/2.0/UDP 10.242.168.15;branch=z9hG4bKBroadWorks.-1f0ofdt-10.242.168.15V5060-0-473695882-378253326-1532103232787-
+From:"vanc1002 vancouver"<sip:+913602131002@10.242.168.15;user=phone>;tag=378253326-1532103232787-
+To:<sip:+914032902109@10.242.168.15:5060;user=phone>
+Call-ID:BW214352787200718-418938630@10.242.168.15
+CSeq:473695882 INVITE
+Content-Length:0
+
+
+
+2018.07.20 21:43:52:791 IST | Info       | Sip | +914032902109 | callhalf-164279:0 | 5:2
+
+        udp 389 Bytes IN from 10.242.168.15:5060
+SIP/2.0 100 Trying
+Via:SIP/2.0/UDP 10.242.168.15;branch=z9hG4bKBroadWorks.-1f0ofdt-10.242.168.15V5060-0-473695882-378253326-1532103232787-
+From:"vanc1002 vancouver"<sip:+913602131002@10.242.168.15;user=phone>;tag=378253326-1532103232787-
+To:<sip:+914032902109@10.242.168.15:5060;user=phone>
+Call-ID:BW214352787200718-418938630@10.242.168.15
+CSeq:473695882 INVITE
+Content-Length:0
+
+
+
+2018.07.20 21:43:52:791 IST | Info       | CallP | SIP Endpoint | +913602131002 | PSTN | callhalf-164283:0 | 6:2
+
+        Processing Event: com.broadsoft.events.sip.SipInviteEvent
+
+2018.07.20 21:43:52:791 IST | Info       | CallP | SIP Endpoint | +914032902109 | PSTN | callhalf-164279:0 | 5:2
+
+        Processing Event: com.broadsoft.events.sip.Sip100InfoEvent
+
+2018.07.20 21:43:52:791 IST | Info       | CallP | SIP Endpoint | +913602131002 | PSTN | callhalf-164283:0 | 6:2
+
+        call: 1  old State: IDLE  new State: INVITING
+
+2018.07.20 21:43:52:791 IST | Info       | CallP | SIP Endpoint | +913602131002 | PSTN | callhalf-164283:0 | 6:2
+
+        Transforming Event: com.broadsoft.events.sip.SipInviteEvent
+
+2018.07.20 21:43:52:791 IST | FieldDebug | CallP | SIP Endpoint | +913602131002 | PSTN | callhalf-164283:0 | 6:2
+
+        SipEndpoint.forkingSupportType set to : MULTIPLE_DIALOGS_WITH_ERROR_CORRECTION, supportMultipleDialogs() = true, suppressPreconditions() =  true
+
+2018.07.20 21:43:52:791 IST | FieldDebug | CallP | SIP Endpoint | +913602131002 | PSTN | callhalf-164283:0 | 6:2
+
+        SipEndpoint.support199 set to : false
+
+2018.07.20 21:43:52:792 IST | Info       | CallP | SIP Endpoint | +913602131002 | PSTN | callhalf-164283:0 | 6:2
+
+        EndpointConnection <dialogID = null> old State: IDLE  new State: NEGOTIATING_WAITING_FOR_ANSWER
+
+2018.07.20 21:43:52:792 IST | Info       | CallP | Call Manager | +913602131002 | PSTN | callhalf-164283 | 6:2
+
+        Processing Event: com.broadsoft.events.iwp.ConnectRequestEvent {SipEndpoint.callhalf-164283:0,CHCallManager.callhalf-164283}
+
+2018.07.20 21:43:52:792 IST | Info       | CallP | SIP Endpoint | +913602131002 | PSTN | callhalf-164283:0 | 6:2
+
+        old State: IDLE  new State: ALERTING
+
+2018.07.20 21:43:52:792 IST | Info       | CallP | Call | +913602131002 | PSTN | callhalf-164283:0 | 6:2
+
+        Processing Event: com.broadsoft.events.callhalf.InvitationEvent {CHCallManager.callhalf-164283,CHCall.callhalf-164283:0}
+
+2018.07.20 21:43:52:792 IST | Info       | CallP | Call | +913602131002 | PSTN | callhalf-164283:0 | 6:2
+
+        CHCallConnection <dialogID = null> old State: IDLE  new State: NEGOTIATING_WAITING_FOR_ANSWER
+
+2018.07.20 21:43:52:794 IST | Info       | CallP | Call | +913602131002 | PSTN | callhalf-164283:0 | 6:2
+
+        Event: com.broadsoft.events.callhalf.InvitationEvent
+        Consumed by: com.broadsoft.services.translation.TranslationServiceOrigInstance
+
+2018.07.20 21:43:52:794 IST | Info       | CallP | Call | +913602131002 | PSTN | callhalf-164283:0 | 6:2
+
+        Processing Service Event: com.broadsoft.events.services.translation.TranslationResultEvent
+
+2018.07.20 21:43:52:794 IST | Info       | CallP | Call | +913602131002 | PSTN | callhalf-164283:0 | 6:2
+
+        Address = +914032902109 , Call Type = Network
+
+2018.07.20 21:43:52:794 IST | Info       | CallP | Call | +913602131002 | PSTN | callhalf-164283:0 | 6:2
+
+        Event: com.broadsoft.events.services.translation.TranslationResultEvent
+        Consumed by: com.broadsoft.apm.callp.components.TranslationManagerCallImpl
+
+2018.07.20 21:43:52:794 IST | Info       | CallP | Call | +913602131002 | PSTN | callhalf-164283:0 | 6:2
+
+        Processing Event: com.broadsoft.apm.asservicemanagement.ResumeEvent
+
+2018.07.20 21:43:52:794 IST | Info       | CallP | Call | +913602131002 | PSTN | callhalf-164283:0 | 6:2
+
+        Resuming Event: com.broadsoft.events.callhalf.InvitationEvent {CHCallManager.callhalf-164283,CHCall.callhalf-164283:0}
+        After Service Instance: com.broadsoft.services.translation.TranslationServiceOrigInstance
+
+2018.07.20 21:43:52:799 IST | Info       | CallP | SIP Endpoint | +914032902109 | PSTN | callhalf-164279:0 | 5:2
+
+        call: 1  old State: INVITING  new State: INVITING
+
+2018.07.20 21:43:52:799 IST | Info       | CallP | SIP Endpoint | +914032902109 | PSTN | callhalf-164279:0 | 5:2
+
+        Transforming Event: com.broadsoft.events.sip.Sip100InfoEvent
+
+2018.07.20 21:43:52:800 IST | Info       | CallP | Call Manager | +914032902109 | PSTN | callhalf-164279 | 5:2
+
+        Processing Event: com.broadsoft.events.iwp.ConnectRequestAckEvent {SipEndpoint.callhalf-164279:0,CHCallManager.callhalf-164279}
+
+2018.07.20 21:43:52:800 IST | Info       | CallP | Call | +913602131002 | PSTN | callhalf-164283:0 | 6:2
+
+        old State: IDLE  new State: ALERTING
+
+2018.07.20 21:43:52:800 IST | Info       | CallP | Call Manager | +914032902109 | PSTN | callhalf-164279 | 5:2
+
+        Event: com.broadsoft.events.iwp.ConnectRequestAckEvent
+        Consumed by: com.broadsoft.services.networkrouting.NetworkRoutingServiceInstance
+
+2018.07.20 21:43:52:800 IST | Info       | Sip | +914032902109 | callhalf-164285 | 6:2
+
+        $ new CHSS > +914032902109 > callhalf-164283:0 > callhalf-164285
+
+2018.07.20 21:43:52:800 IST | Info       | CallP | Call Manager | +914032902109 | calgary | callhalf-164285 | 6:2
+
+        Processing Event: com.broadsoft.events.callhalf.TerminationEvent : callhalf-164283:0 {CHCall.callhalf-164283:0,CHCallManager.callhalf-164285}
+
+2018.07.20 21:43:52:802 IST | Info       | CallP | Call | +914032902109 | calgary | callhalf-164285:0 | 6:2
+
+        Processing Event: com.broadsoft.events.callhalf.InvitationEvent {CHCall.callhalf-164283:0,CHCall.callhalf-164285:0}
+
+2018.07.20 21:43:52:802 IST | Info       | CallP | Call | +914032902109 | calgary | callhalf-164285:0 | 6:2
+
+        CHCallConnection <dialogID = null> old State: IDLE  new State: NEGOTIATING_WAITING_FOR_ANSWER
+
+2018.07.20 21:43:52:802 IST | FieldDebug | CallP | Call | +914032902109 | calgary | callhalf-164285:0 | 6:2
+
+        Location-Based Calling Data
+        Network: Roaming Disabled
+        Zone: Zones Disabled
+
+2018.07.20 21:43:52:805 IST | Info       | Accounting | localHost21 | 6:2
+
+        CALL TERMINATION ACCOUNTING EVENT
+        Time Stamp: Fri Jul 20 21:43:52 IST 2018 (1532103232788)
+        Accounting ID: 164285:0
+        External Tracking ID: 6:2
+        Local Address: +914032902109@10.242.168.15;user=phone
+        Local Group Name: calgary
+        Remote Address: +913602131002@10.242.168.15;user=phone
+        Call Type: Network
+        Service Provider ID: WestCoastSP
+        Reseller ID: null
+        Time Zone: Asia/Calcutta
+        Local Group Address: +914032902150
+        Local Department Name: null
+        First Redirecting Number: null
+        First RN Pres. Indicator: PUBLIC
+        First Redirecting Reason: null
+        Last Redirecting Number : null
+        Last RN Pres. Indicator : PUBLIC
+        Last Redirecting Reason: null
+        P-Charging-Vector: null
+        Output Call Log: false
+        UserId: ca2109@bw3.che.broadsoft.com
+        Can have device: true
+        P-Charging-Function-Addresses: null
+        Related Call Id Name: null
+        Related Call Id Reason: null
+        Primary Device Lineport: 4032902109@bw3.che.broadsoft.com
+        Prepaid Event Handler Key: null
+        Virtual On-Net Type: null
+        Office Zone: null
+        Primary Zone: null
+        Roaming MSC Address: null
+        Charge Number: null
+        StateReplicationState: STANDALONE
+        rfSessionID: che-bw3-as1;1532103232802;12|1
+        Calling Presentation Address: +913602131002@10.242.168.15;user=phone
+        Calling Asserted Identity: name: vanc1002 vancouver, address: +913602131002@10.242.168.15;user=phone
+        Trunk Group Name: null
+        Trunk Group Info: null
+        Calling Party Addresses List: [sip:+913602131002@10.242.168.15;user=phone]
+        Called Party Address: null
+        Route List DN: null
+        Network Call Within Enterprise: false
+        Gets Info: null
+        Service Policy Uid: null
+        IMS Enabled: false
+        Automatic Collect Call type: null
+        Route: 10.242.168.15
+        Network CallID: BW214352787200718-418938630@10.242.168.15
+        Remote CallID: 164283:0
+        Calling Party Name: vanc1002 vancouver
+        Calling Pres. Indicator: PUBLIC
+        Clid Permitted: true
+        Name Permitted: true
+        Routing Number: null
+        Routing Number Context: null
+        Topmost Route Entry: null
+        Direct Route Number: null
+        Called Address: +914032902109@10.242.168.15;user=phone
+
+
+2018.07.20 21:43:52:805 IST | FieldDebug | CallP | Service | CB | +914032902109 | calgary | callhalf-164285:0 | 6:2
+
+        Terminating CB screening, Calling Party: +913602131002
+
+2018.07.20 21:43:52:805 IST | FieldDebug | CallP | Service | CB | +914032902109 | calgary | callhalf-164285:0 | 6:2
+
+        Apply profile DefaultCommunicationBarringProfile default termination action: Allow
+
+2018.07.20 21:43:52:806 IST | Info       | CallP | Call | +914032902109 | calgary | callhalf-164285:0 | 6:2
+
+        Event: com.broadsoft.events.callhalf.InvitationEvent
+        Consumed by: com.broadsoft.services.cfalways.CFAlwaysTerminatorServiceInstance
+
+2018.07.20 21:43:52:806 IST | Info       | CallP | Call | +913602131002 | PSTN | callhalf-164283:0 | 6:2
+
+        Processing Event: com.broadsoft.events.callhalf.LinkRemoteCallEvent : callhalf-164285:0 {CHCall.callhalf-164285:0,CHCall.callhalf-164283:0}
+
+2018.07.20 21:43:52:806 IST | Info       | Generic
+
+        Agent Availability for ca2109@bw3.che.broadsoft.com (2109) set to BUSY_ONHOOK
+
+2018.07.20 21:43:52:806 IST | Info       | CallP | Call | +914032902109 | calgary | callhalf-164285:0 | 6:2
+
+        Processing Service Event: com.broadsoft.events.services.translation.TranslationResultEvent
+
+2018.07.20 21:43:52:810 IST | Info       | CallP | Call | +914032902109 | calgary | callhalf-164285:0 | 6:2
+
+        Event: com.broadsoft.events.services.translation.TranslationResultEvent
+        Consumed by: com.broadsoft.util.services.CallForwarder$TranslationResultHandler
+
+2018.07.20 21:43:52:810 IST | Info       | CallP | Call | +914032902109 | calgary | callhalf-164285:0 | 6:2
+
+        Processing Event: com.broadsoft.events.callhalf.RedirectCallEvent : FORWARD , 4032902101
+
+2018.07.20 21:43:52:810 IST | Info       | CallP | Call | +914032902109 | calgary | callhalf-164285:0 | 6:2
+
+        Event: com.broadsoft.events.callhalf.RedirectCallEvent : FORWARD , 4032902101
+        Consumed by: com.broadsoft.services.translation.TranslationServiceTermInstance
+
+2018.07.20 21:43:52:810 IST | Info       | CallP | Call | +914032902109 | calgary | callhalf-164285:0 | 6:2
+
+        Processing Service Event: com.broadsoft.events.services.translation.TranslationResultEvent
+
+2018.07.20 21:43:52:810 IST | Info       | CallP | Call | +914032902109 | calgary | callhalf-164285:0 | 6:2
+
+        Address = +914032902101 , Call Type = Group
+
+2018.07.20 21:43:52:810 IST | Info       | CallP | Call | +914032902109 | calgary | callhalf-164285:0 | 6:2
+
+        Event: com.broadsoft.events.services.translation.TranslationResultEvent
+        Consumed by: com.broadsoft.apm.callp.components.TranslationManagerCallImpl
+
+2018.07.20 21:43:52:810 IST | Info       | CallP | Call | +914032902109 | calgary | callhalf-164285:0 | 6:2
+
+        Processing Event: com.broadsoft.apm.asservicemanagement.ResumeEvent
+
+2018.07.20 21:43:52:810 IST | Info       | CallP | Call | +914032902109 | calgary | callhalf-164285:0 | 6:2
+
+        Resuming Event: com.broadsoft.events.callhalf.RedirectCallEvent : FORWARD , +914032902101
+        After Service Instance: com.broadsoft.services.translation.TranslationServiceTermInstance
+
+2018.07.20 21:43:52:811 IST | FieldDebug | CallP | Service | CB | +914032902109 | calgary | callhalf-164285:0 | 6:2
+
+        Apply profile DefaultCommunicationBarringProfile default redirection: Allow
+
+2018.07.20 21:43:52:812 IST | Info       | Accounting | localHost21 | 6:2
+
+        SERVICE INVOCATION ACCOUNTING EVENT
+        Time Stamp: Fri Jul 20 21:43:52 IST 2018 (1532103232812)
+        Accounting ID: 164285:0
+        External Tracking ID: 6:2
+        Service Name: Call Forward
+
+
+2018.07.20 21:43:52:813 IST | Info       | Accounting | localHost22 | 6:2
+
+        CALL ORIGINATION ACCOUNTING EVENT
+        Time Stamp: Fri Jul 20 21:43:52 IST 2018 (1532103232812)
+        Accounting ID: 164285:0A
+        External Tracking ID: 6:2
+        Local Address: +914032902109@10.242.168.15;user=phone
+        Local Group Name: calgary
+        Remote Address: +914032902101@10.242.168.15;user=phone
+        Call Type: Group
+        Service Provider ID: WestCoastSP
+        Reseller ID: null
+        Time Zone: Asia/Calcutta
+        Local Group Address: +914032902150
+        Local Department Name: null
+        First Redirecting Number: +914032902109@10.242.168.15;user=phone
+        First RN Pres. Indicator: PUBLIC
+        First Redirecting Reason: unconditional
+        Last Redirecting Number : +914032902109@10.242.168.15;user=phone
+        Last RN Pres. Indicator : PUBLIC
+        Last Redirecting Reason: unconditional
+        P-Charging-Vector: null
+        Output Call Log: false
+        UserId: ca2109@bw3.che.broadsoft.com
+        Can have device: true
+        P-Charging-Function-Addresses: null
+        Related Call Id Name: 164285:0
+        Related Call Id Reason: Call Forward Always
+        Primary Device Lineport: 4032902109@bw3.che.broadsoft.com
+        Prepaid Event Handler Key: null
+        Virtual On-Net Type: null
+        Office Zone: null
+        Primary Zone: null
+        Roaming MSC Address: null
+        Charge Number: null
+        StateReplicationState: STANDALONE
+        rfSessionID: che-bw3-as1;1532103232812;13|1
+        Calling Presentation Address: +913602131002@10.242.168.15;user=phone
+        Calling Asserted Identity: name: vanc1002 vancouver, address: +913602131002@10.242.168.15;user=phone
+        Trunk Group Name: null
+        Trunk Group Info: null
+        Calling Party Addresses List: null
+        Called Party Address: null
+        Route List DN: null
+        Network Call Within Enterprise: false
+        Gets Info: null
+        Service Policy Uid: null
+        IMS Enabled: false
+        Automatic Collect Call type: null
+        Dialed Address: 4032902101@10.242.168.15;user=phone
+        Calling Number: +913602131002@10.242.168.15;user=phone
+        Calling Number Pres. Indicator: PUBLIC
+        Local Address Override: null
+        Local Time Zone Override: null
+        Local Dept Name Override: null
+        Local User Id Override: null
+        Calling Party Category: null
+        Access CallID: null
+        Called Party Name: calg2101 calgary
+        Called Pres. Indicator: PUBLIC
+        P-Access-Network-Info: null
+        Configurable CLID: null
+        Origination Method:  Not set 
+        Outside Access Code: null
+        Received Calling Number: null
+        Local User Agent: null
+        LocalSDP: null
+        numberPortabilityTranslationResult: null
+        topmostRouteEntry: null
+        receivedChargingVector: null
+
+2018.07.20 21:43:52:813 IST | Info       | CallP | Call | +914032902109 | calgary | callhalf-164285:0 | 6:2
+
+        Processing Event: com.broadsoft.events.callhalf.DetachEvent
+
+2018.07.20 21:43:52:813 IST | Info       | CallP | Call | +914032902109 | calgary | callhalf-164285:0 | 6:2
+
+        Processing Event: com.broadsoft.events.callhalf.TakeDownEvent
+
+2018.07.20 21:43:52:814 IST | Info       | CallP | Call Manager | +914032902109 | calgary | callhalf-164285 | 6:2
+
+        Processing Event: com.broadsoft.events.callhalf.DetachEvent {CHCall.callhalf-164285:0,CHCallManager.callhalf-164285}
+
+2018.07.20 21:43:52:814 IST | Info       | Generic
+
+        Agent Availability for ca2109@bw3.che.broadsoft.com (2109) set to BUSY_ONHOOK
+
+2018.07.20 21:43:52:814 IST | Info       | CallP | Call | +914032902109 | calgary | callhalf-164285:0 | 6:2
+
+        old State: IDLE  new State: DETACHED
+
+2018.07.20 21:43:52:814 IST | Info       | Accounting | localHost21 | 6:2
+
+        STATE CHANGE ACCOUNTING EVENT
+        Time Stamp: Fri Jul 20 21:43:52 IST 2018 (1532103232814)
+        Accounting ID: 164285:0
+        External Tracking ID: 6:2
+        Detached: true
+        Access CallID: null
+        LocalSDP: null
+
+
+2018.07.20 21:43:52:815 IST | Info       | Generic
+
+        Agent Availability for ca2109@bw3.che.broadsoft.com (2109) set to AVAILABLE
+
+2018.07.20 21:43:52:815 IST | Info       | CallP | Call | +913602131002 | PSTN | callhalf-164283:0 | 6:2
+
+        Processing Event: com.broadsoft.events.callhalf.AlertingEvent - Reliable {CHCall.callhalf-164285:0,CHCall.callhalf-164283:0}
+
+2018.07.20 21:43:52:815 IST | Info       | CallP | Call Manager | +913602131002 | PSTN | callhalf-164283 | 6:2
+
+        Processing Event: com.broadsoft.events.callhalf.AlertingEvent - Reliable {CHCall.callhalf-164283:0,CHCallManager.callhalf-164283}
+
+2018.07.20 21:43:52:815 IST | Info       | CallP | SIP Endpoint | +913602131002 | PSTN | callhalf-164283:0 | 6:2
+
+        Transforming Event: com.broadsoft.events.callhalf.AlertingEvent - Reliable {CHCallManager.callhalf-164283,SipEndpoint.callhalf-164283:0}
+
+2018.07.20 21:43:52:815 IST | Info       | CallP | SIP Endpoint | +913602131002 | PSTN | callhalf-164283:0 | 6:2
+
+        EndpointConnection <dialogID = 7> AlertingResponseEvent processed, sending back 200 
+
+2018.07.20 21:43:52:815 IST | Info       | CallP | SIP Endpoint | +913602131002 | PSTN | callhalf-164283:0 | 6:2
+
+        EndpointConnection <dialogID = 7> Event: com.broadsoft.events.callhalf.AlertingResponseEvent
+        Consumed by: com.broadsoft.apm.connectionmanagement.SipEndpointConnection
+
+2018.07.20 21:43:52:815 IST | Info       | CallP | Call Manager | +913602131002 | PSTN | callhalf-164283 | 6:2
+
+        Processing Event: com.broadsoft.events.services.ringback.RingbackAlertingResponseEvent {SipEndpoint.callhalf-164283:0,CHCallManager.callhalf-164283}
+
+2018.07.20 21:43:52:815 IST | Info       | CallP | Call Manager | +913602131002 | PSTN | callhalf-164283 | 6:2
+
+        Event: com.broadsoft.events.services.ringback.RingbackAlertingResponseEvent
+        Consumed by: com.broadsoft.services.ringback.RingbackServiceInstance
+
+2018.07.20 21:43:52:815 IST | Info       | CallP | SIP Endpoint | +913602131002 | PSTN | callhalf-164283:0 | 6:2
+
+        Transforming Event: com.broadsoft.events.callhalf.AlertingResponseAckEvent {CHCallManager.callhalf-164283,SipEndpoint.callhalf-164283:0}
+
+2018.07.20 21:43:52:815 IST | Info       | CallP | Call | +913602131002 | PSTN | callhalf-164283:0 | 6:2
+
+        Processing Event: com.broadsoft.events.callhalf.RedirectCallEvent : FORWARD , +914032902101 {CHCall.callhalf-164285:0,CHCall.callhalf-164283:0}
+
+2018.07.20 21:43:52:815 IST | FieldDebug | CallP | Call | +913602131002 | PSTN | callhalf-164283:0 | 6:2
+
+        Redirected call info retained.
+
+2018.07.20 21:43:52:816 IST | Info       | CallP | Call | +913602131002 | PSTN | callhalf-164283:0 | 6:2
+
+        Processing Event: com.broadsoft.events.callhalf.RemotePartyUpdateEvent {CHCall.callhalf-164283:0,CHCall.callhalf-164283:0}
+
+2018.07.20 21:43:52:816 IST | Info       | CallP | Call Manager | +913602131002 | PSTN | callhalf-164283 | 6:2
+
+        Processing Event: com.broadsoft.events.callhalf.RedirectCallEvent : FORWARD , +914032902101 {CHCall.callhalf-164283:0,CHCallManager.callhalf-164283}
+
+2018.07.20 21:43:52:816 IST | Info       | CallP | Call Manager | +913602131002 | PSTN | callhalf-164283 | 6:2
+
+        Processing Event: com.broadsoft.events.callhalf.RemotePartyUpdateEvent {CHCall.callhalf-164283:0,CHCallManager.callhalf-164283}
+
+2018.07.20 21:43:52:816 IST | Info       | CallP | Call | +913602131002 | PSTN | callhalf-164283:0 | 6:2
+
+        Processing Event: com.broadsoft.events.callhalf.RedirectInvitationEvent {CHCallManager.callhalf-164283,CHCall.callhalf-164283:0}
+
+2018.07.20 21:43:52:816 IST | Info       | Sip | +914032902101 | callhalf-164289 | 6:2
+
+        $ new CHSS > +914032902101 > callhalf-164283:0 > callhalf-164289
+
+2018.07.20 21:43:52:817 IST | Info       | CallP | Call Manager | +914032902101 | calgary | callhalf-164289 | 6:2
+
+        Processing Event: com.broadsoft.events.callhalf.TerminationEvent : callhalf-164283:0 {CHCall.callhalf-164283:0,CHCallManager.callhalf-164289}
+
+2018.07.20 21:43:52:818 IST | Info       | CallP | Call | +914032902101 | calgary | callhalf-164289:0 | 6:2
+
+        Processing Event: com.broadsoft.events.callhalf.InvitationEvent {CHCall.callhalf-164283:0,CHCall.callhalf-164289:0}
+
+2018.07.20 21:43:52:818 IST | Info       | CallP | Call | +914032902101 | calgary | callhalf-164289:0 | 6:2
+
+        CHCallConnection <dialogID = null> old State: IDLE  new State: NEGOTIATING_WAITING_FOR_ANSWER
+
+2018.07.20 21:43:52:818 IST | FieldDebug | CallP | Call | +914032902101 | calgary | callhalf-164289:0 | 6:2
+
+        Location-Based Calling Data
+        Network: Roaming Disabled
+        Zone: Zones Disabled
+
+2018.07.20 21:43:52:819 IST | FieldDebug | CallP | Service | CB | +914032902101 | calgary | callhalf-164289:0 | 6:2
+
+        Terminating CB screening, Calling Party: +913602131002
+
+2018.07.20 21:43:52:819 IST | FieldDebug | CallP | Service | CB | +914032902101 | calgary | callhalf-164289:0 | 6:2
+
+        Apply profile DefaultCommunicationBarringProfile default termination action: Allow
+
+2018.07.20 21:43:52:820 IST | Info       | Accounting | localHost23 | 6:2
+
+        CALL TERMINATION ACCOUNTING EVENT
+        Time Stamp: Fri Jul 20 21:43:52 IST 2018 (1532103232812)
+        Accounting ID: 164289:0
+        External Tracking ID: 6:2
+        Local Address: +914032902101@10.242.168.15;user=phone
+        Local Group Name: calgary
+        Remote Address: +913602131002@10.242.168.15;user=phone
+        Call Type: Group
+        Service Provider ID: WestCoastSP
+        Reseller ID: null
+        Time Zone: Asia/Calcutta
+        Local Group Address: +914032902150
+        Local Department Name: null
+        First Redirecting Number: +914032902109@10.242.168.15;user=phone
+        First RN Pres. Indicator: PUBLIC
+        First Redirecting Reason: unconditional
+        Last Redirecting Number : +914032902109@10.242.168.15;user=phone
+        Last RN Pres. Indicator : PUBLIC
+        Last Redirecting Reason: unconditional
+        P-Charging-Vector: null
+        Output Call Log: false
+        UserId: ca2101@bw3.che.broadsoft.com
+        Can have device: true
+        P-Charging-Function-Addresses: null
+        Related Call Id Name: null
+        Related Call Id Reason: null
+        Primary Device Lineport: 4032902101@bw3.che.broadsoft.com
+        Prepaid Event Handler Key: null
+        Virtual On-Net Type: null
+        Office Zone: null
+        Primary Zone: null
+        Roaming MSC Address: null
+        Charge Number: null
+        StateReplicationState: STANDALONE
+        rfSessionID: che-bw3-as1;1532103232819;14|1
+        Calling Presentation Address: +913602131002@10.242.168.15;user=phone
+        Calling Asserted Identity: name: vanc1002 vancouver, address: +913602131002@10.242.168.15;user=phone
+        Trunk Group Name: null
+        Trunk Group Info: null
+        Calling Party Addresses List: [sip:+913602131002@10.242.168.15;user=phone]
+        Called Party Address: null
+        Route List DN: null
+        Network Call Within Enterprise: false
+        Gets Info: null
+        Service Policy Uid: null
+        IMS Enabled: false
+        Automatic Collect Call type: null
+        Route: Group
+        Network CallID:  (value not set) 
+        Remote CallID: 164285:0A
+        Calling Party Name: vanc1002 vancouver
+        Calling Pres. Indicator: PUBLIC
+        Clid Permitted: true
+        Name Permitted: true
+        Routing Number: null
+        Routing Number Context: null
+        Topmost Route Entry: null
+        Direct Route Number: null
+        Called Address: +914032902101@10.242.168.15;user=phone
+
+
+2018.07.20 21:43:52:821 IST | Info       | CallP | Call | +914032902101 | calgary | callhalf-164289:0 | 6:2
+
+        Event: com.broadsoft.events.callhalf.InvitationEvent
+        Consumed by: com.broadsoft.services.answertimer.AnswerTimerServiceInstance
+
+2018.07.20 21:43:52:821 IST | Info       | CallP | Call | +914032902101 | calgary | callhalf-164289:0 | 6:2
+
+        Processing Event: com.broadsoft.events.services.answertimer.AnswerTimeoutEvent
+
+2018.07.20 21:43:52:821 IST | Info       | CallP | Call | +914032902101 | calgary | callhalf-164289:0 | 6:2
+
+        Processing Event: com.broadsoft.events.services.answertimer.AnswerTimeoutUnhandledEvent
+
+2018.07.20 21:43:52:821 IST | Info       | CallP | Call | +914032902101 | calgary | callhalf-164289:0 | 6:2
+
+        Event: com.broadsoft.events.services.answertimer.AnswerTimeoutUnhandledEvent
+        Consumed by: com.broadsoft.services.answertimer.AnswerTimerServiceInstance
+
+2018.07.20 21:43:52:821 IST | Info       | CallP | Call | +914032902101 | calgary | callhalf-164289:0 | 6:2
+
+        Processing Event: com.broadsoft.apm.asservicemanagement.ResumeEvent
+
+2018.07.20 21:43:52:821 IST | Info       | CallP | Call | +914032902101 | calgary | callhalf-164289:0 | 6:2
+
+        Resuming Event: com.broadsoft.events.callhalf.InvitationEvent {CHCall.callhalf-164283:0,CHCall.callhalf-164289:0}
+        After Service Instance: com.broadsoft.services.answertimer.AnswerTimerServiceInstance
+
+2018.07.20 21:43:52:823 IST | Info       | CallP | Call | +913602131002 | PSTN | callhalf-164283:0 | 6:2
+
+        Processing Event: com.broadsoft.events.callhalf.LinkRemoteCallEvent : callhalf-164289:0 {CHCall.callhalf-164289:0,CHCall.callhalf-164283:0}
+
+2018.07.20 21:43:52:826 IST | Info       | CallP | Call Manager | +914032902109 | calgary | callhalf-164285 | 6:2
+
+        Processing Event: com.broadsoft.events.accounting.AccountingProxyEvent[com.broadsoft.events.accounting.LinkRemoteAccountingEvent] {SessionKey.callhalf-164289,CHCallManager.callhalf-164285}
+
+2018.07.20 21:43:52:826 IST | Info       | Accounting | localHost22 | 6:2
+
+        LINK REMOTE CALL ACCOUNTING EVENT
+        Time Stamp: Fri Jul 20 21:43:52 IST 2018 (1532103232819)
+        Accounting ID: 164285:0A
+        External Tracking ID: 6:2
+        remoteCallId: 164289:0
+
+
+2018.07.20 21:43:52:826 IST | Info       | CallP | Call Manager | +914032902109 | calgary | callhalf-164285 | 6:2
+
+        Event Consumed by Pre-Handler: com.broadsoft.events.accounting.AccountingProxyEvent[com.broadsoft.events.accounting.LinkRemoteAccountingEvent]
+
+2018.07.20 21:43:52:826 IST | Info       | CallP | Call | +914032902101 | calgary | callhalf-164289:0 | 6:2
+
+        old State: IDLE  new State: ALERTING
+
+2018.07.20 21:43:52:826 IST | Info       | CallP | Call Manager | +914032902101 | calgary | callhalf-164289 | 6:2
+
+        Processing Event: com.broadsoft.events.callhalf.InvitationEvent {CHCall.callhalf-164289:0,CHCallManager.callhalf-164289}
+
+2018.07.20 21:43:52:826 IST | FieldDebug | Generic
+
+        BroadWorksAnywhereSubscriberData: user ca2101 has BA service assigned with no ba location provisioned. bwas.ba_location
+
+2018.07.20 21:43:52:826 IST | Info       | CallP | Service | Executive | +914032902101 | calgary | callhalf-164289:0 | 6:2
+
+        Not filtering - no opted-in assistants
+
+2018.07.20 21:43:52:827 IST | FieldDebug | Generic
+
+        BroadWorksAnywhereSubscriberData: user ca2101 has BA service assigned with no ba location provisioned. bwas.ba_location
+
+2018.07.20 21:43:52:827 IST | FieldDebug | CallP | Service | Shared Call Appearance | +914032902101 | calgary | callhalf-164289:0 | 6:2
+
+        proxyForkingProvisionalResponses set to : false
+
+2018.07.20 21:43:52:827 IST | FieldDebug | Generic
+
+        BroadWorksAnywhereSubscriberData: user ca2101 has BA service assigned with no ba location provisioned. bwas.ba_location
+
+2018.07.20 21:43:52:827 IST | FieldDebug | CallP | Service | Shared Call Appearance | +914032902101 | calgary | callhalf-164289 | 6:2
+
+        proxyForkingProvisionalResponses set to <false> for call <callhalf-164289:0>
+
+2018.07.20 21:43:52:827 IST | Info       | CallP | SIP Endpoint | +914032902101 | calgary | callhalf-164289:0 | 6:2
+
+        old State: IDLE  new State: ALERTING
+
+2018.07.20 21:43:52:827 IST | Info       | CallP | SIP Endpoint | +914032902101 | calgary | callhalf-164289:0 | 6:2
+
+        EndpointConnection <dialogID = null> old State: IDLE  new State: NEGOTIATING_WAITING_FOR_ANSWER
+
+2018.07.20 21:43:52:827 IST | Info       | CallP | SIP Endpoint | +914032902101 | calgary | callhalf-164289:0 | 6:2
+
+        Transforming Event: com.broadsoft.events.iwp.ConnectRequestEvent {CHCallManager.callhalf-164289,SipEndpoint.callhalf-164289:0}
+
+2018.07.20 21:43:52:828 IST | Info       | CallP | SIP Endpoint | +914032902101 | calgary | callhalf-164289:0 | 6:2
+
+        call: 1  old State: IDLE  new State: INVITING
+
+2018.07.20 21:43:52:828 IST | Info       | CallP | Call Manager | +914032902101 | calgary | callhalf-164289 | 6:2
+
+        Processing Event: com.broadsoft.events.callhalf.AccountingInfoEvent {SipEndpoint.callhalf-164289:0,CHCallManager.callhalf-164289}
+
+2018.07.20 21:43:52:828 IST | Info       | CallP | Call | +914032902101 | calgary | callhalf-164289:0 | 6:2
+
+        Processing Event: com.broadsoft.events.callhalf.AccountingInfoEvent {CHCallManager.callhalf-164289,CHCall.callhalf-164289:0}
+
+2018.07.20 21:43:52:828 IST | Info       | Sip | +914032902101 | callhalf-164289:0 | 6:2
+
+        udp 1143 Bytes OUT to 10.242.177.1:12101
+INVITE sip:4032902101@10.242.177.1:12101 SIP/2.0
+Via:SIP/2.0/UDP 10.242.168.15;branch=z9hG4bKBroadWorks.-1f0ofdt-10.242.177.1V12101-0-473695903-988711246-1532103232828-
+From:"vanc1002 vancouver"<sip:3602131002@10.242.168.15;user=phone>;tag=988711246-1532103232828-
+To:"calg2101 calgary"<sip:4032902101@bw3.che.broadsoft.com>
+Call-ID:BW214352827200718-1861618357@10.242.168.15
+CSeq:473695903 INVITE
+Contact:<sip:10.242.168.15:5060>
+Diversion:"calg2109 calgary"<sip:4032902109@10.242.168.15;user=phone>;reason=unconditional;counter=1
+Supported:100rel
+Allow:ACK,BYE,CANCEL,INFO,INVITE,OPTIONS,PRACK,REFER,NOTIFY,UPDATE
+Call-Info:<sip:10.242.168.15>;appearance-index=1
+Recv-Info:x-broadworks-client-session-info
+X-BroadWorks-Correlation-Info:6:2
+Accept:application/gtd,application/media_control+xml,application/sdp,application/vnd.etsi.sci+xml,multipart/mixed
+Max-Forwards:5
+Content-Type:application/sdp
+Content-Length:205
+
+v=0
+o=BroadWorks 32 1 IN IP4 10.242.177.1
+s=-
+c=IN IP4 10.242.177.1
+t=0 0
+m=audio 8002 RTP/AVP 0 8 101
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:101 telephone-event/8000
+a=fmtp:101 0-15
+
+
+2018.07.20 21:43:52:828 IST | Info       | Generic
+
+        Agent Availability for ca2101@bw3.che.broadsoft.com (2101) set to BUSY_ONHOOK
+
+2018.07.20 21:43:52:828 IST | Info       | CallP | Call Manager | +914032902101 | calgary | callhalf-164289 | 6:2
+
+        Processing Event: com.broadsoft.events.eventnotification.GenerateNotifyEvent {SessionKey.callhalf-164289,CHCallManager.callhalf-164289}
+
+2018.07.20 21:43:52:838 IST | Info       | Sip | +914032902101 | callhalf-164289:0 | 6:2
+
+        udp 460 Bytes IN from 10.242.177.1:12101
+SIP/2.0 486 Busy Here
+Via: SIP/2.0/UDP 10.242.168.15;branch=z9hG4bKBroadWorks.-1f0ofdt-10.242.177.1V12101-0-473695903-988711246-1532103232828-
+From:"vanc1002 vancouver"<sip:3602131002@10.242.168.15;user=phone>;tag=988711246-1532103232828-
+To:"calg2101 calgary"<sip:4032902101@bw3.che.broadsoft.com>
+Contact: <sip:4032902101@10.242.177.1:12101;transport=udp>
+Call-ID: BW214352827200718-1861618357@10.242.168.15
+CSeq:473695903 INVITE
+Content-Length: 0
+
+
+
+2018.07.20 21:43:52:839 IST | Info       | CallP | SIP Endpoint | +914032902101 | calgary | callhalf-164289:0 | 6:2
+
+        Processing Event: com.broadsoft.events.sip.Sip400RequestFailureEvent
+
+2018.07.20 21:43:52:839 IST | Info       | CallP | SIP Endpoint | +914032902101 | calgary | callhalf-164289:0 | 6:2
+
+        call: 1  old State: INVITING  new State: RELEASED
+
+2018.07.20 21:43:52:839 IST | Info       | CallP | SIP Endpoint | +914032902101 | calgary | callhalf-164289:0 | 6:2
+
+        Transforming Event: com.broadsoft.events.sip.Sip400RequestFailureEvent
+
+2018.07.20 21:43:52:839 IST | Info       | Sip | +914032902101 | callhalf-164289:0 | 6:2
+
+        udp 434 Bytes OUT to 10.242.177.1:12101
+ACK sip:4032902101@10.242.177.1:12101 SIP/2.0
+Via:SIP/2.0/UDP 10.242.168.15;branch=z9hG4bKBroadWorks.-1f0ofdt-10.242.177.1V12101-0-473695903-988711246-1532103232828-
+From:"vanc1002 vancouver"<sip:3602131002@10.242.168.15;user=phone>;tag=988711246-1532103232828-
+To:"calg2101 calgary"<sip:4032902101@bw3.che.broadsoft.com>
+Call-ID:BW214352827200718-1861618357@10.242.168.15
+CSeq:473695903 ACK
+Max-Forwards:5
+Content-Length:0
+
+
+
+2018.07.20 21:43:52:846 IST | FieldDebug | CallP | Endpoint | +914032902101 | calgary | callhalf-164289:0 | 6:2
+
+        ReleaseWithCauseEvent (cause=BUSY) created
+        Thread "Call Half Input Adapter 0" stack elements:
+        1:      com.broadsoft.events.callhalf.ReleaseWithCauseEvent.<init>(ReleaseWithCauseEvent.java:278)
+        2:      com.broadsoft.events.callhalf.ReleaseWithCauseEvent.<init>(ReleaseWithCauseEvent.java:217)
+        3:      com.broadsoft.sessionmanagers.sipcallhalf.transformer.Sip400RequestFailureEventTransformer.buildCHEvent(Sip400RequestFailureEventTransformer.java:240)
+        4:      com.broadsoft.sessionmanagers.sipcallhalf.transformer.Sip400RequestFailureEventTransformer.transformImpl(Sip400RequestFailureEventTransformer.java:127)
+        5:      com.broadsoft.sessionmanagers.sipcallhalf.transformer.SipResponseEventTransformer.doTransform(SipResponseEventTransformer.java:40)
+        6:      com.broadsoft.sessionmanagers.sipcallhalf.transformer.SipEventTransformer.transform(SipEventTransformer.java:28)
+        7:      com.broadsoft.sessionmanagers.sipcallhalf.SipCHEventTransformer.sipCHtransform(SipCHEventTransformer.java:293)
+        8:      com.broadsoft.sessionmanagers.sipcallhalf.SipCHEventTransformer.transform(SipCHEventTransformer.java:300)
+        9:      com.broadsoft.sessionmanagers.sipcallhalf.SipEndpoint.sendEventToCallManager(SipEndpoint.java:1594)
+        10:     com.broadsoft.sessionmanagers.sipcallhalf.SipEndpoint.processSessionEvent(SipEndpoint.java:1190)
+        11:     com.broadsoft.apm.callp.Endpoint.processEvent(Endpoint.java:321)
+        12:     com.broadsoft.sessionmanagers.callhalf.CallHalfServiceSession.deliverEvent(CallHalfServiceSession.java:1820)
+        13:     com.broadsoft.apm.statereplication.StateReplicationSessionWrapper.deliverEventToSession(StateReplicationSessionWrapper.java:621)
+        14:     com.broadsoft.apm.statereplication.StateReplicationSessionWrapper.deliverEvent(StateReplicationSessionWrapper.java:467)
+        15:     com.broadsoft.apm.session.InputAdapter.distributeEvent(InputAdapter.java:128)
+        16:     com.broadsoft.sessionmanagers.callhalf.CHInputAdapter.distributeEvent(CHInputAdapter.java:43)
+        17:     com.broadsoft.apm.session.SimpleQAdapter.processInput(SimpleQAdapter.java:264)
+        18:     com.broadsoft.apm.session.SimpleQAdapter.processInput(SimpleQAdapter.java:28)
+        19:     com.broadsoft.util.watchdog.WatchedThread.run(WatchedThread.java:278)
+        20:     java.lang.Thread.run(Thread.java:748)
+
+
+2018.07.20 21:43:52:847 IST | Info       | CallP | Call Manager | +914032902101 | calgary | callhalf-164289 | 6:2
+
+        Processing Event: com.broadsoft.events.callhalf.ReleaseWithCauseEvent : BUSY {SipEndpoint.callhalf-164289:0,CHCallManager.callhalf-164289}
+
+2018.07.20 21:43:52:847 IST | Info       | CallP | SIP Endpoint | +914032902101 | calgary | callhalf-164289:0 | 6:2
+
+        old State: ALERTING  new State: IDLE
+
+2018.07.20 21:43:52:848 IST | Info       | CallP | Call | +914032902101 | calgary | callhalf-164289:0 | 6:2
+
+        Processing Event: com.broadsoft.events.callhalf.ReleaseWithCauseEvent : BUSY {CHCallManager.callhalf-164289,CHCall.callhalf-164289:0}
+
+2018.07.20 21:43:52:849 IST | Info       | CallP | Call | +913602131002 | PSTN | callhalf-164283:0 | 6:2
+
+        Processing Event: com.broadsoft.events.callhalf.ReleaseWithCauseEvent : BUSY {CHCall.callhalf-164289:0,CHCall.callhalf-164283:0}
+
+2018.07.20 21:43:52:853 IST | FieldDebug | Accounting | localHost23 | 6:2
+
+        generateNormalCDR: Send CDR to File
+        CDR Type: Normal
+        CDR Direction: Terminating
+        CDR User Number: +914032902101
+        CDR Calling Number: +913602131002
+        CDR Called Number: +914032902101
+        CDR Local CallId: 164289:0
+        CDR Remote CallId: 164285:0A
+        CDR External Tracking ID: 6:2
+
+2018.07.20 21:43:52:853 IST | FieldDebug | Accounting | localHost23 | 6:2
+
+        Mapping RfActiveSession for ca2101@bw3.che.broadsoft.com - 164289:0
+
+2018.07.20 21:43:52:853 IST | Info       | Diameter | Rf | callhalf-164289:0 | 6:2
+
+        Mapping Diameter Rf session AccountingID.164289:0,SessionKey.localHost23,Diameter.che-bw3-as1;1532103232819;14|1
+
+2018.07.20 21:43:52:853 IST | FieldDebug | Accounting | localHost23 | 6:2
+
+        generateNormalCDR: Send CDR to Rf Interface
+        CDR Type: Normal
+        CDR Direction: Terminating
+        CDR User Number: +914032902101
+        CDR Calling Number: +913602131002
+        CDR Called Number: +914032902101
+        CDR Local CallId: 164289:0
+        CDR Remote CallId: 164285:0A
+        CDR External Tracking ID: 6:2
+
+2018.07.20 21:43:52:853 IST | Info       | Accounting | localHost23 | 6:2
+
+        CALL RELEASE ACCOUNTING EVENT
+        Time Stamp: Fri Jul 20 21:43:52 IST 2018 (1532103232849)
+        Accounting ID: 164289:0
+        External Tracking ID: 6:2
+        Remote Release: false
+        Release Cause: BUSY
+        Route: Group
+        Network Translated Address: null
+        Category: private
+        Network CallID:  (value not set) 
+        Call Inactive: false
+        Charge Indicator: n
+        Access CallID: BW214352827200718-1861618357@10.242.168.15
+        P-Charging-Vector: null
+        P-Charging-Function-Addresses: null
+        P-Access-Network-Info: null
+        Related Call Id Name: null
+        Related Call Id Reason: null
+        LocalSDP: null
+        ConfigurableTreatment: null
+        Called Asserted Identity: sip:+913602131002@10.242.168.15
+        Called Asserted Presentation Indicator: PUBLIC
+        SIP error code: 486
+        pbxDeflection: false
+        Calling Party Addresses List: [sip:+913602131002@10.242.168.15;user=phone]
+        Called Party Address: sip:4032902101@10.242.177.1:12101
+        Outgoing Trunk Group: null
+
+
+2018.07.20 21:43:52:856 IST | Info       | Diameter | Rf | che-bw3-as1;1532103232819;14|1 | 6:2
+
+        No more destinations, generating DIAMETER_UNABLE_TO_DELIVER
+
+2018.07.20 21:43:52:856 IST | FieldDebug | Accounting | localHost23 | 6:2
+
+        com.broadsoft.events.accounting.AccountingAcaReceivedEvent
+
+2018.07.20 21:43:52:856 IST | Info       | Accounting | localHost23 | 6:2
+
+        Diameter Rf response received with invalid record type, using the ACR's instead
+
+2018.07.20 21:43:52:856 IST | FieldDebug | Accounting | localHost23 | 6:2
+
+        ACA[Event], callId=164289:0, ssk=localHost23
+
+2018.07.20 21:43:52:856 IST | FieldDebug | Accounting | localHost23 | 6:2
+
+        Unmapping RfActiveSession for ca2101@bw3.che.broadsoft.com - 164289:0
+
+2018.07.20 21:43:52:857 IST | Info       | CallP | Call | +914032902101 | calgary | callhalf-164289:0 | 6:2
+
+        old State: ALERTING  new State: RELEASED
+
+2018.07.20 21:43:52:858 IST | Info       | CallP | Call Manager | +914032902101 | calgary | callhalf-164289
+
+        Processing Event: com.broadsoft.events.callhalf.CallCompletingEvent {SipEndpoint.callhalf-164289:0,CHCallManager.callhalf-164289}
+
+2018.07.20 21:43:52:858 IST | Info       | Generic
+
+        Agent Availability for ca2101@bw3.che.broadsoft.com (2101) set to AVAILABLE
+
+2018.07.20 21:43:52:858 IST | Info       | CallP | Call Manager | +914032902101 | calgary | callhalf-164289 | 6:2
+
+        Processing Event: com.broadsoft.events.eventnotification.GenerateNotifyEvent {SessionKey.callhalf-164289,CHCallManager.callhalf-164289}
+
+2018.07.20 21:43:52:885 IST | Info       | CallP | Call | +913602131002 | PSTN | callhalf-164283:0 | 6:2
+
+        old State: ALERTING  new State: RELEASED
+
+2018.07.20 21:43:52:886 IST | Info       | CallP | Call | +913602131002 | PSTN | callhalf-164283:0 | 6:2
+
+        Processing Event: com.broadsoft.events.callhalf.ResetDialogsEvent
+
+2018.07.20 21:43:52:886 IST | Info       | CallP | Call Manager | +913602131002 | PSTN | callhalf-164283 | 6:2
+
+        Processing Event: com.broadsoft.events.callhalf.ReleaseWithCauseEvent : BUSY {CHCall.callhalf-164283:0,CHCallManager.callhalf-164283}
+
+2018.07.20 21:43:52:886 IST | Info       | CallP | SIP Endpoint | +913602131002 | PSTN | callhalf-164283:0 | 6:2
+
+        old State: ALERTING  new State: IDLE
+
+2018.07.20 21:43:52:886 IST | Info       | CallP | Call Manager | +913602131002 | PSTN | callhalf-164283 | 6:2
+
+        Processing Event: com.broadsoft.events.callhalf.ResetDialogsEvent {CHCall.callhalf-164283:0,CHCallManager.callhalf-164283}
+
+2018.07.20 21:43:52:887 IST | Info       | CallP | SIP Endpoint | +913602131002 | PSTN | callhalf-164283:0 | 6:2
+
+        Transforming Event: com.broadsoft.events.callhalf.ReleaseWithCauseEvent : BUSY {CHCallManager.callhalf-164283,SipEndpoint.callhalf-164283:0}
+
+2018.07.20 21:43:52:887 IST | Info       | CallP | SIP Endpoint | +913602131002 | PSTN | callhalf-164283:0 | 6:2
+
+        call: 1  old State: INVITING  new State: REJECTING
+
+2018.07.20 21:43:52:887 IST | Info       | Sip | +913602131002 | callhalf-164283:0 | 6:2
+
+        udp 427 Bytes OUT to 10.242.168.15:5060
+SIP/2.0 600 Busy everywhere
+Via:SIP/2.0/UDP 10.242.168.15;branch=z9hG4bKBroadWorks.-1f0ofdt-10.242.168.15V5060-0-473695882-378253326-1532103232787-
+From:"vanc1002 vancouver"<sip:+913602131002@10.242.168.15;user=phone>;tag=378253326-1532103232787-
+To:<sip:+914032902109@10.242.168.15:5060;user=phone>;tag=1140862164-1532103232887
+Call-ID:BW214352787200718-418938630@10.242.168.15
+CSeq:473695882 INVITE
+Content-Length:0
+
+
+
+2018.07.20 21:43:52:888 IST | Info       | Sip | +914032902109 | callhalf-164279:0 | 5:2
+
+        udp 427 Bytes IN from 10.242.168.15:5060
+SIP/2.0 600 Busy everywhere
+Via:SIP/2.0/UDP 10.242.168.15;branch=z9hG4bKBroadWorks.-1f0ofdt-10.242.168.15V5060-0-473695882-378253326-1532103232787-
+From:"vanc1002 vancouver"<sip:+913602131002@10.242.168.15;user=phone>;tag=378253326-1532103232787-
+To:<sip:+914032902109@10.242.168.15:5060;user=phone>;tag=1140862164-1532103232887
+Call-ID:BW214352787200718-418938630@10.242.168.15
+CSeq:473695882 INVITE
+Content-Length:0
+
+
+
+2018.07.20 21:43:52:888 IST | Info       | CallP | SIP Endpoint | +914032902109 | PSTN | callhalf-164279:0 | 5:2
+
+        Processing Event: com.broadsoft.events.sip.Sip600GlobalFailureEvent
+
+2018.07.20 21:43:52:888 IST | Info       | CallP | SIP Endpoint | +914032902109 | PSTN | callhalf-164279:0 | 5:2
+
+        call: 1  old State: INVITING  new State: RELEASED
+
+2018.07.20 21:43:52:888 IST | Info       | CallP | SIP Endpoint | +914032902109 | PSTN | callhalf-164279:0 | 5:2
+
+        Transforming Event: com.broadsoft.events.sip.Sip600GlobalFailureEvent
+
+2018.07.20 21:43:52:889 IST | FieldDebug | CallP | Endpoint | +914032902109 | PSTN | callhalf-164279:0 | 5:2
+
+        ReleaseWithCauseEvent (cause=BUSY) created
+        Thread "Call Half Input Adapter 0" stack elements:
+        1:      com.broadsoft.events.callhalf.ReleaseWithCauseEvent.<init>(ReleaseWithCauseEvent.java:278)
+        2:      com.broadsoft.events.callhalf.ReleaseWithCauseEvent.<init>(ReleaseWithCauseEvent.java:217)
+        3:      com.broadsoft.sessionmanagers.sipcallhalf.transformer.Sip600GlobalFailureEventTransformer.buildCHEvent(Sip600GlobalFailureEventTransformer.java:88)
+        4:      com.broadsoft.sessionmanagers.sipcallhalf.transformer.Sip600GlobalFailureEventTransformer.transformImpl(Sip600GlobalFailureEventTransformer.java:30)
+        5:      com.broadsoft.sessionmanagers.sipcallhalf.transformer.SipResponseEventTransformer.doTransform(SipResponseEventTransformer.java:40)
+        6:      com.broadsoft.sessionmanagers.sipcallhalf.transformer.SipEventTransformer.transform(SipEventTransformer.java:28)
+        7:      com.broadsoft.sessionmanagers.sipcallhalf.SipCHEventTransformer.sipCHtransform(SipCHEventTransformer.java:293)
+        8:      com.broadsoft.sessionmanagers.sipcallhalf.SipCHEventTransformer.transform(SipCHEventTransformer.java:300)
+        9:      com.broadsoft.sessionmanagers.sipcallhalf.SipEndpoint.sendEventToCallManager(SipEndpoint.java:1594)
+        10:     com.broadsoft.sessionmanagers.sipcallhalf.SipEndpoint.processSessionEvent(SipEndpoint.java:1190)
+        11:     com.broadsoft.apm.callp.Endpoint.processEvent(Endpoint.java:321)
+        12:     com.broadsoft.sessionmanagers.callhalf.CallHalfServiceSession.deliverEvent(CallHalfServiceSession.java:1820)
+        13:     com.broadsoft.apm.statereplication.StateReplicationSessionWrapper.deliverEventToSession(StateReplicationSessionWrapper.java:621)
+        14:     com.broadsoft.apm.statereplication.StateReplicationSessionWrapper.deliverEvent(StateReplicationSessionWrapper.java:467)
+        15:     com.broadsoft.apm.session.InputAdapter.distributeEvent(InputAdapter.java:128)
+        16:     com.broadsoft.sessionmanagers.callhalf.CHInputAdapter.distributeEvent(CHInputAdapter.java:43)
+        17:     com.broadsoft.apm.session.SimpleQAdapter.processInput(SimpleQAdapter.java:264)
+        18:     com.broadsoft.apm.session.SimpleQAdapter.processInput(SimpleQAdapter.java:28)
+        19:     com.broadsoft.util.watchdog.WatchedThread.run(WatchedThread.java:278)
+        20:     java.lang.Thread.run(Thread.java:748)
+
+
+2018.07.20 21:43:52:889 IST | Info       | CallP | Call Manager | +914032902109 | PSTN | callhalf-164279 | 5:2
+
+        Processing Event: com.broadsoft.events.callhalf.ReleaseWithCauseEvent : BUSY {SipEndpoint.callhalf-164279:0,CHCallManager.callhalf-164279}
+
+2018.07.20 21:43:52:889 IST | Info       | CallP | SIP Endpoint | +914032902109 | PSTN | callhalf-164279:0 | 5:2
+
+        old State: ALERTING  new State: IDLE
+
+2018.07.20 21:43:52:889 IST | Info       | CallP | Call | +914032902109 | PSTN | callhalf-164279:0 | 5:2
+
+        Processing Event: com.broadsoft.events.callhalf.ReleaseWithCauseEvent : BUSY {CHCallManager.callhalf-164279,CHCall.callhalf-164279:0}
+
+2018.07.20 21:43:52:889 IST | Info       | CallP | Call | +914032902109 | PSTN | callhalf-164279:0 | 5:2
+
+        old State: ALERTING  new State: RELEASED
+
+2018.07.20 21:43:52:889 IST | Info       | CallP | Call Manager | +914032902109 | PSTN | callhalf-164279
+
+        Processing Event: com.broadsoft.events.callhalf.CallCompletingEvent {SipEndpoint.callhalf-164279:0,CHCallManager.callhalf-164279}
+
+2018.07.20 21:43:52:889 IST | Info       | CallP | Call | +913602131002 | vancouver | callhalf-164277:0 | 5:2
+
+        Processing Event: com.broadsoft.events.callhalf.ReleaseWithCauseEvent : BUSY {CHCall.callhalf-164279:0,CHCall.callhalf-164277:0}
+
+2018.07.20 21:43:52:890 IST | Info       | CallP | Call | +913602131002 | vancouver | callhalf-164277:0 | 5:2
+
+        old State: ALERTING  new State: RELEASED
+
+2018.07.20 21:43:52:891 IST | FieldDebug | Accounting | localHost20 | 5:2
+
+        generateNormalCDR: Send CDR to File
+        CDR Type: Normal
+        CDR Direction: Originating
+        CDR User Number: +913602131002
+        CDR Calling Number: +913602131002
+        CDR Called Number: 4032902109
+        CDR Local CallId: 164277:0
+        CDR Remote CallId: null
+        CDR External Tracking ID: 5:2
+
+2018.07.20 21:43:52:891 IST | FieldDebug | Accounting | localHost20 | 5:2
+
+        Mapping RfActiveSession for va1002@bw3.che.broadsoft.com - 164277:0
+
+2018.07.20 21:43:52:891 IST | Info       | Diameter | Rf | callhalf-164277:0 | 5:2
+
+        Mapping Diameter Rf session AccountingID.164277:0,SessionKey.localHost20,Diameter.che-bw3-as1;1532103232783;10|1
+
+2018.07.20 21:43:52:891 IST | FieldDebug | Accounting | localHost20 | 5:2
+
+        generateNormalCDR: Send CDR to Rf Interface
+        CDR Type: Normal
+        CDR Direction: Originating
+        CDR User Number: +913602131002
+        CDR Calling Number: +913602131002
+        CDR Called Number: 4032902109
+        CDR Local CallId: 164277:0
+        CDR Remote CallId: null
+        CDR External Tracking ID: 5:2
+
+2018.07.20 21:43:52:891 IST | Info       | Accounting | localHost20 | 5:2
+
+        CALL RELEASE ACCOUNTING EVENT
+        Time Stamp: Fri Jul 20 21:43:52 IST 2018 (1532103232889)
+        Accounting ID: 164277:0
+        External Tracking ID: 5:2
+        Remote Release: true
+        Release Cause: BUSY
+        Route: 10.242.168.15:5060
+        Network Translated Address: +914032902109@10.242.168.15:5060;user=phone;cat=LOCAL;nct=LO;ton=PUBLIC;net-ind=IntraAS;psp=sip:+914032902109@10.242.168.15:5060;user=phone
+        Category: LOCAL
+        Network CallID: BW214352787200718-418938630@10.242.168.15
+        Call Inactive: false
+        Charge Indicator: n
+        Access CallID: 747917-9590130x81000001@10.242.177.1
+        P-Charging-Vector: null
+        P-Charging-Function-Addresses: null
+        P-Access-Network-Info: null
+        Related Call Id Name: null
+        Related Call Id Reason: null
+        LocalSDP: present (OFFER)
+        ConfigurableTreatment: null
+        Called Asserted Identity: sip:4032902109@10.242.168.15
+        Called Asserted Presentation Indicator: PUBLIC
+        SIP error code: 600
+        pbxDeflection: false
+        Calling Party Addresses List: list is null
+        Called Party Address: sip:+914032902109@10.242.168.15:5060;user=phone
+        Outgoing Trunk Group: null
+
+
+2018.07.20 21:43:52:897 IST | Info       | Diameter | Rf | che-bw3-as1;1532103232783;10|1 | 5:2
+
+        No more destinations, generating DIAMETER_UNABLE_TO_DELIVER
+
+2018.07.20 21:43:52:897 IST | FieldDebug | Accounting | localHost20 | 5:2
+
+        com.broadsoft.events.accounting.AccountingAcaReceivedEvent
+
+2018.07.20 21:43:52:897 IST | Info       | Accounting | localHost20 | 5:2
+
+        Diameter Rf response received with invalid record type, using the ACR's instead
+
+2018.07.20 21:43:52:897 IST | FieldDebug | Accounting | localHost20 | 5:2
+
+        ACA[Event], callId=164277:0, ssk=localHost20
+
+2018.07.20 21:43:52:897 IST | FieldDebug | Accounting | localHost20 | 5:2
+
+        Unmapping RfActiveSession for va1002@bw3.che.broadsoft.com - 164277:0
+
+2018.07.20 21:43:52:907 IST | Info       | Sip | +914032902109 | callhalf-164279:0 | 5:2
+
+        udp 472 Bytes OUT to 10.242.168.15:5060
+ACK sip:+914032902109@10.242.168.15:5060;user=phone SIP/2.0
+Via:SIP/2.0/UDP 10.242.168.15;branch=z9hG4bKBroadWorks.-1f0ofdt-10.242.168.15V5060-0-473695882-378253326-1532103232787-
+From:"vanc1002 vancouver"<sip:+913602131002@10.242.168.15;user=phone>;tag=378253326-1532103232787-
+To:<sip:+914032902109@10.242.168.15:5060;user=phone>;tag=1140862164-1532103232887
+Call-ID:BW214352787200718-418938630@10.242.168.15
+CSeq:473695882 ACK
+Max-Forwards:5
+Content-Length:0
+
+
+
+2018.07.20 21:43:52:907 IST | Info       | CallP | Call | +913602131002 | vancouver | callhalf-164277:0 | 5:2
+
+        Processing Event: com.broadsoft.events.callhalf.ResetDialogsEvent
+
+2018.07.20 21:43:52:908 IST | Info       | CallP | Call Manager | +913602131002 | vancouver | callhalf-164277 | 5:2
+
+        Processing Event: com.broadsoft.events.callhalf.ReleaseWithCauseEvent : BUSY {CHCall.callhalf-164277:0,CHCallManager.callhalf-164277}
+
+2018.07.20 21:43:52:908 IST | Info       | CallP | SIP Endpoint | +913602131002 | vancouver | callhalf-164277:0 | 5:2
+
+        old State: ALERTING  new State: IDLE
+
+2018.07.20 21:43:52:908 IST | Info       | CallP | Call Manager | +913602131002 | vancouver | callhalf-164277 | 5:2
+
+        Processing Event: com.broadsoft.events.callhalf.ResetDialogsEvent {CHCall.callhalf-164277:0,CHCallManager.callhalf-164277}
+
+2018.07.20 21:43:52:908 IST | Info       | CallP | SIP Endpoint | +913602131002 | vancouver | callhalf-164277:0 | 5:2
+
+        Transforming Event: com.broadsoft.events.callhalf.ReleaseWithCauseEvent : BUSY {CHCallManager.callhalf-164277,SipEndpoint.callhalf-164277:0}
+
+2018.07.20 21:43:52:908 IST | Info       | CallP | SIP Endpoint | +913602131002 | vancouver | callhalf-164277:0 | 5:2
+
+        call: 1  old State: INVITING  new State: REJECTING
+
+2018.07.20 21:43:52:908 IST | Info       | Sip | +913602131002 | callhalf-164277:0 | 5:2
+
+        udp 344 Bytes OUT to 10.242.177.1:11002
+SIP/2.0 486 Busy here
+Via:SIP/2.0/UDP 10.242.177.1:11002;branch=z9hG4bK3776063152560x81000001
+From:<sip:3602131002@bw3.che.broadsoft.com:5060;user=phone>;tag=667104-1517690x81000001
+To:<sip:4032902109@bw3.che.broadsoft.com:5060>;tag=1695492814-1532103232908
+Call-ID:747917-9590130x81000001@10.242.177.1
+CSeq:87 INVITE
+Content-Length:0
+
+
+
+2018.07.20 21:43:52:908 IST | Info       | CallP | Call Manager | +913602131002 | vancouver | callhalf-164277 | 5:2
+
+        Processing Event: com.broadsoft.events.eventnotification.GenerateNotifyEvent {SessionKey.callhalf-164277,CHCallManager.callhalf-164277}
+
+2018.07.20 21:43:52:908 IST | Info       | CallP | Call | +914032902109 | calgary | callhalf-164285:0 | 6:2
+
+        Processing Event: com.broadsoft.events.callhalf.ReleaseWithCauseEvent : BUSY {CHCall.callhalf-164283:0,CHCall.callhalf-164285:0}
+
+2018.07.20 21:43:52:912 IST | FieldDebug | Accounting | localHost21 | 6:2
+
+        generateNormalCDR: Send CDR to File
+        CDR Type: Normal
+        CDR Direction: Terminating
+        CDR User Number: +914032902109
+        CDR Calling Number: +913602131002
+        CDR Called Number: +914032902109
+        CDR Local CallId: 164285:0
+        CDR Remote CallId: null
+        CDR External Tracking ID: 6:2
+
+2018.07.20 21:43:52:912 IST | FieldDebug | Accounting | localHost21 | 6:2
+
+        Mapping RfActiveSession for ca2109@bw3.che.broadsoft.com - 164285:0
+
+2018.07.20 21:43:52:912 IST | Info       | Diameter | Rf | callhalf-164285:0 | 6:2
+
+        Mapping Diameter Rf session AccountingID.164285:0,SessionKey.localHost21,Diameter.che-bw3-as1;1532103232802;12|1
+
+2018.07.20 21:43:52:913 IST | FieldDebug | Accounting | localHost21 | 6:2
+
+        generateNormalCDR: Send CDR to Rf Interface
+        CDR Type: Normal
+        CDR Direction: Terminating
+        CDR User Number: +914032902109
+        CDR Calling Number: +913602131002
+        CDR Called Number: +914032902109
+        CDR Local CallId: 164285:0
+        CDR Remote CallId: null
+        CDR External Tracking ID: 6:2
+
+2018.07.20 21:43:52:914 IST | Info       | Diameter | Rf | che-bw3-as1;1532103232802;12|1 | 6:2
+
+        No more destinations, generating DIAMETER_UNABLE_TO_DELIVER
+
+2018.07.20 21:43:52:914 IST | Info       | Accounting | localHost21 | 6:2
+
+        CALL RELEASE ACCOUNTING EVENT
+        Time Stamp: Fri Jul 20 21:43:52 IST 2018 (1532103232849)
+        Accounting ID: 164285:0
+        External Tracking ID: 6:2
+        Remote Release: true
+        Release Cause: BUSY
+        Route: unconfirmed
+        Network Translated Address: null
+        Category:  (value not set) 
+        Network CallID:  (value not set) 
+        Call Inactive: true
+        Charge Indicator: y
+        Access CallID: null
+        P-Charging-Vector: null
+        P-Charging-Function-Addresses: null
+        P-Access-Network-Info: null
+        Related Call Id Name: null
+        Related Call Id Reason: null
+        LocalSDP: null
+        ConfigurableTreatment: null
+        Called Asserted Identity: sip:+913602131002@10.242.168.15
+        Called Asserted Presentation Indicator: PUBLIC
+        SIP error code: 486
+        pbxDeflection: false
+        Calling Party Addresses List: [sip:+913602131002@10.242.168.15;user=phone]
+        Called Party Address: null
+        Outgoing Trunk Group: null
+
+
+2018.07.20 21:43:52:914 IST | FieldDebug | Accounting | localHost21 | 6:2
+
+        com.broadsoft.events.accounting.AccountingAcaReceivedEvent
+
+2018.07.20 21:43:52:915 IST | Info       | CallP | Call | +914032902109 | calgary | callhalf-164285:0 | 6:2
+
+        old State: DETACHED  new State: RELEASED
+
+2018.07.20 21:43:52:915 IST | Info       | CallP | Call Manager | +914032902109 | calgary | callhalf-164285 | 6:2
+
+        Processing Event: com.broadsoft.events.callhalf.ReleaseWithCauseEvent : BUSY {CHCall.callhalf-164285:0,CHCallManager.callhalf-164285}
+
+2018.07.20 21:43:52:917 IST | Info       | Sip | +914032902109 | callhalf-164293
+
+        $ new CHSS > +914032902109 >  > callhalf-164293
+
+2018.07.20 21:43:52:919 IST | Info       | CallP | Call Manager | +914032902109 | calgary | callhalf-164293
+
+        Processing Event: com.broadsoft.events.eventnotification.GenerateNotifyNoSessionEvent
+
+2018.07.20 21:43:52:921 IST | Info       | Sip | +913602131002 | callhalf-164277:0 | 5:2
+
+        udp 397 Bytes IN from 10.242.177.1:11002
+ACK sip:4032902109@bw3.che.broadsoft.com:5060 SIP/2.0
+Via: SIP/2.0/UDP 10.242.177.1:11002;branch=z9hG4bK3776063152560x81000001
+From:  <sip:3602131002@bw3.che.broadsoft.com:5060;user=phone>;tag=667104-1517690x81000001
+To:<sip:4032902109@bw3.che.broadsoft.com:5060>;tag=1695492814-1532103232908
+Call-ID: 747917-9590130x81000001@10.242.177.1
+CSeq: 87 ACK
+Max-Forwards: 70
+Content-Length: 0
+
+
+
+2018.07.20 21:43:52:921 IST | Info       | CallP | SIP Endpoint | +913602131002 | vancouver | callhalf-164277:0 | 5:2
+
+        Processing Event: com.broadsoft.events.sip.SipAckEvent
+
+2018.07.20 21:43:52:921 IST | Info       | Accounting | localHost21 | 6:2
+
+        Diameter Rf response received with invalid record type, using the ACR's instead
+
+2018.07.20 21:43:52:921 IST | FieldDebug | Accounting | localHost21 | 6:2
+
+        ACA[Event], callId=164285:0, ssk=localHost21
+
+2018.07.20 21:43:52:921 IST | FieldDebug | Accounting | localHost21 | 6:2
+
+        Unmapping RfActiveSession for ca2109@bw3.che.broadsoft.com - 164285:0
+
+2018.07.20 21:43:52:922 IST | Info       | CallP | SIP Endpoint | +913602131002 | vancouver | callhalf-164277:0 | 5:2
+
+        call: 1  old State: REJECTING  new State: RELEASED
+
+2018.07.20 21:43:52:922 IST | FieldDebug | Accounting | localHost22 | 6:2
+
+        generateNormalCDR: Send CDR to File
+        CDR Type: Normal
+        CDR Direction: Originating
+        CDR User Number: +914032902109
+        CDR Calling Number: +913602131002
+        CDR Called Number: +914032902101
+        CDR Local CallId: 164285:0A
+        CDR Remote CallId: 164289:0
+        CDR External Tracking ID: 6:2
+
+2018.07.20 21:43:52:922 IST | FieldDebug | Accounting | localHost22 | 6:2
+
+        Mapping RfActiveSession for ca2109@bw3.che.broadsoft.com - 164285:0A
+
+2018.07.20 21:43:52:922 IST | Info       | Diameter | Rf | callhalf-164285 | 6:2
+
+        Mapping Diameter Rf session AccountingID.164285:0A,SessionKey.localHost22,Diameter.che-bw3-as1;1532103232812;13|1
+
+2018.07.20 21:43:52:922 IST | Info       | Sip | +913602131002 | callhalf-164277:0 | 5:2
+
+        udp 397 Bytes IN from 10.242.177.1:11002
+ACK sip:4032902109@bw3.che.broadsoft.com:5060 SIP/2.0
+Via: SIP/2.0/UDP 10.242.177.1:11002;branch=z9hG4bK3776063152560x81000001
+From:  <sip:3602131002@bw3.che.broadsoft.com:5060;user=phone>;tag=667104-1517690x81000001
+To:<sip:4032902109@bw3.che.broadsoft.com:5060>;tag=1695492814-1532103232908
+Call-ID: 747917-9590130x81000001@10.242.177.1
+CSeq: 87 ACK
+Max-Forwards: 70
+Content-Length: 0
+
+
+
+2018.07.20 21:43:52:922 IST | Info       | CallP | SIP Endpoint | +913602131002 | vancouver | callhalf-164277:0 | 5:2
+
+        Processing Event: com.broadsoft.events.sip.SipAckEvent
+
+2018.07.20 21:43:52:922 IST | FieldDebug | Accounting | localHost22 | 6:2
+
+        generateNormalCDR: Send CDR to Rf Interface
+        CDR Type: Normal
+        CDR Direction: Originating
+        CDR User Number: +914032902109
+        CDR Calling Number: +913602131002
+        CDR Called Number: +914032902101
+        CDR Local CallId: 164285:0A
+        CDR Remote CallId: 164289:0
+        CDR External Tracking ID: 6:2
+
+2018.07.20 21:43:52:922 IST | Info       | Accounting | localHost22 | 6:2
+
+        CALL RELEASE ACCOUNTING EVENT
+        Time Stamp: Fri Jul 20 21:43:52 IST 2018 (1532103232849)
+        Accounting ID: 164285:0A
+        External Tracking ID: 6:2
+        Remote Release: true
+        Release Cause: BUSY
+        Route: Group
+        Network Translated Address: null
+        Category: private
+        Network CallID:  (value not set) 
+        Call Inactive: true
+        Charge Indicator: null
+        Access CallID: null
+        P-Charging-Vector: null
+        P-Charging-Function-Addresses: null
+        P-Access-Network-Info: null
+        Related Call Id Name: null
+        Related Call Id Reason: null
+        LocalSDP: null
+        ConfigurableTreatment: null
+        Called Asserted Identity: null
+        Called Asserted Presentation Indicator: NOT_SET
+        SIP error code: 486
+        pbxDeflection: false
+        Calling Party Addresses List: [sip:+913602131002@10.242.168.15;user=phone]
+        Called Party Address: null
+        Outgoing Trunk Group: null
+
+
+2018.07.20 21:43:52:922 IST | Info       | Generic
+
+        Agent Availability for va1002@bw3.che.broadsoft.com (1002) set to AVAILABLE
+
+2018.07.20 21:43:52:922 IST | Info       | CallP | CallP | +914032902109 | calgary | callhalf-164293
+
+        Session Completed
+
+2018.07.20 21:43:52:924 IST | Info       | Diameter | Rf | che-bw3-as1;1532103232812;13|1 | 6:2
+
+        No more destinations, generating DIAMETER_UNABLE_TO_DELIVER
+
+2018.07.20 21:43:52:925 IST | FieldDebug | Accounting | localHost22 | 6:2
+
+        com.broadsoft.events.accounting.AccountingAcaReceivedEvent
+
+2018.07.20 21:43:52:925 IST | Info       | Accounting | localHost22 | 6:2
+
+        Diameter Rf response received with invalid record type, using the ACR's instead
+
+2018.07.20 21:43:52:925 IST | FieldDebug | Accounting | localHost22 | 6:2
+
+        ACA[Event], callId=164285:0A, ssk=localHost22
+
+2018.07.20 21:43:52:925 IST | FieldDebug | Accounting | localHost22 | 6:2
+
+        Unmapping RfActiveSession for ca2109@bw3.che.broadsoft.com - 164285:0A
+
+2018.07.20 21:43:52:936 IST | Info       | CallP | CallP | +914032902109 | calgary | callhalf-164285 | 6:2
+
+        Session Completed
+
+2018.07.20 21:43:52:937 IST | Info       | Sip | +913602131002 | callhalf-164283:0 | 6:2
+
+        udp 472 Bytes IN from 10.242.168.15:5060
+ACK sip:+914032902109@10.242.168.15:5060;user=phone SIP/2.0
+Via:SIP/2.0/UDP 10.242.168.15;branch=z9hG4bKBroadWorks.-1f0ofdt-10.242.168.15V5060-0-473695882-378253326-1532103232787-
+From:"vanc1002 vancouver"<sip:+913602131002@10.242.168.15;user=phone>;tag=378253326-1532103232787-
+To:<sip:+914032902109@10.242.168.15:5060;user=phone>;tag=1140862164-1532103232887
+Call-ID:BW214352787200718-418938630@10.242.168.15
+CSeq:473695882 ACK
+Max-Forwards:5
+Content-Length:0
+
+
+
+2018.07.20 21:43:52:937 IST | Info       | CallP | SIP Endpoint | +913602131002 | PSTN | callhalf-164283:0 | 6:2
+
+        Processing Event: com.broadsoft.events.sip.SipAckEvent
+
+2018.07.20 21:43:52:937 IST | Info       | CallP | SIP Endpoint | +913602131002 | PSTN | callhalf-164283:0 | 6:2
+
+        call: 1  old State: REJECTING  new State: RELEASED
+
+2018.07.20 21:43:53:527 IST | Warn       | CommonPersistency
+
+        ORACLE DATABASE: Listener up but unable to create a new connection: Listener refused the connection with the following error:
+ORA-12514, TNS:listener does not currently know of service requested in connect descriptor
+ 
+
+2018.07.20 21:43:53:527 IST | Warn       | CommonPersistency
+
+        ORACLE DATABASE: Listener down and mngmt connection invalid: null
+
+2018.07.20 21:43:53:527 IST | Info       | CommonPersistency
+
+        ORACLE SCHEMA: Setting new bweccr Schema Status to SCHEMA_NA
+        Reason: DB Access Status is DB_NA
+
+2018.07.20 21:43:53:527 IST | Info       | CommonPersistency
+
+        ORACLE SCHEMA: Setting new bwecllogs Schema Status to SCHEMA_NA
+        Reason: DB Access Status is DB_NA
+
+2018.07.20 21:43:53:527 IST | Info       | CommonPersistency
+
+        ORACLE SCHEMA: Setting new dbManagement Schema Status to SCHEMA_NA
+        Reason: DB Access Status is DB_NA
+
+2018.07.20 21:43:53:528 IST | Warn       | CommonPersistency
+
+        ORACLE DATABASE [ bwCentralizedDb ] Monitoring Summary:
+        ORACLE SERVICE [ bwCentralizedDb ]
+        Access Status:  DB_NA
+        Sites Status:   NO_CONNECTION
+        |HOST            |ROLE            |STATUS    |MODE                |SO STATUS         |FSFO STATUS       | SESSIONS|
+        |-----------------------------------------------------------------------------------------------------------------|
+        |10.242.168.82   |UNKNOWN         |UNKNOWN   |UNKNOWN             |                  |UNKNOWN           |0000     |
+
+        Monitoring Steps time elapsed:
+                Overall monitoring -> 1 ms
+                Connection validation (ping 10.242.168.82) -> 0 ms
+                Testing new connection (10.242.168.82) -> 1 ms
+                Monitoring schema bweccr -> 0 ms
+                Monitoring schema bwecllogs -> 0 ms
+                Monitoring schema dbManagement -> 0 ms
+
+
+        Universal Connection Pool for bwecllogs_10.242.168.82 Statistics: (AvailableConnectionsCount=0), (BorrowedConnectionsCount=0), (TotalConnectionsCount=0), (ConnectionsCreatedCount=0), (ConnectionsClosedCount=0), (AbandonedConnectionsCount=0), (LabeledConnectionsCount=0), (PendingRequestsCount=0), (RemainingPoolCapacityCount=200), (PeakConnectionsCount=0), (PeakConnectionWaitTime=0), (AverageBorrowedConnectionsCount=0), (AverageConnectionWaitTime=0), (CumulativeConnectionBorrowedCount=0), (CumulativeConnectionReturnedCount=0), (CumulativeConnectionUseTime=0), (CumulativeConnectionWaitTime=0), (CumulativeSuccessfulConnectionWaitCount=0),(CumulativeSuccessfulConnectionWaitTime=0), (CumulativeFailedConnectionWaitCount=0), (CumulativeFailedConnectionWaitTime=0), (SuccessfulAffinityBasedBorrowCount=0), (FailedAffinityBasedBorrowCount=0), (SuccessfulRCLBBasedBorrowCount=0), (FailedRCLBBasedBorrowCount=0), (FCFProcessingInfo=)
+
+        Universal Connection Pool for bweccr_10.242.168.82 Statistics: (AvailableConnectionsCount=0), (BorrowedConnectionsCount=0), (TotalConnectionsCount=0), (ConnectionsCreatedCount=0), (ConnectionsClosedCount=0), (AbandonedConnectionsCount=0), (LabeledConnectionsCount=0), (PendingRequestsCount=0), (RemainingPoolCapacityCount=200), (PeakConnectionsCount=0), (PeakConnectionWaitTime=0), (AverageBorrowedConnectionsCount=0), (AverageConnectionWaitTime=0), (CumulativeConnectionBorrowedCount=0), (CumulativeConnectionReturnedCount=0), (CumulativeConnectionUseTime=0), (CumulativeConnectionWaitTime=0), (CumulativeSuccessfulConnectionWaitCount=0),(CumulativeSuccessfulConnectionWaitTime=0), (CumulativeFailedConnectionWaitCount=0), (CumulativeFailedConnectionWaitTime=0), (SuccessfulAffinityBasedBorrowCount=0), (FailedAffinityBasedBorrowCount=0), (SuccessfulRCLBBasedBorrowCount=0), (FailedRCLBBasedBorrowCount=0), (FCFProcessingInfo=)
+
+2018.07.20 21:43:57:772 IST | Info       | CallP | SIP Endpoint | +913602131002 | vancouver | callhalf-164277:1 | 5:2
+
+        call: 1  old State: RELEASED  new State: DEAD
+
+2018.07.20 21:43:57:772 IST | Info       | CallP | Call Manager | +913602131002 | vancouver | callhalf-164277 | 5:2
+
+        Processing Event: com.broadsoft.events.iwp.EndpointCompletedEvent {SipEndpoint.callhalf-164277:1,CHCallManager.callhalf-164277}
+
+2018.07.20 21:43:57:780 IST | Info       | CallP | SIP Endpoint | +913602131002 | vancouver | callhalf-164277:2 | 5:2
+
+        call: 1  old State: RELEASED  new State: DEAD
+
+2018.07.20 21:43:57:780 IST | Info       | CallP | Call Manager | +913602131002 | vancouver | callhalf-164277 | 5:2
+
+        Processing Event: com.broadsoft.events.iwp.EndpointCompletedEvent {SipEndpoint.callhalf-164277:2,CHCallManager.callhalf-164277}
+
+2018.07.20 21:43:57:839 IST | Info       | CallP | SIP Endpoint | +914032902101 | calgary | callhalf-164289:0 | 6:2
+
+        Processing Event: com.broadsoft.events.timer.TimerTimeOutEvent
+
+2018.07.20 21:43:57:839 IST | Info       | CallP | SIP Endpoint | +914032902101 | calgary | callhalf-164289:0 | 6:2
+
+        call: 1  old State: RELEASED  new State: DEAD
+
+2018.07.20 21:43:57:839 IST | Info       | CallP | Call Manager | +914032902101 | calgary | callhalf-164289 | 6:2
+
+        Processing Event: com.broadsoft.events.iwp.EndpointCompletedEvent {SipEndpoint.callhalf-164289:0,CHCallManager.callhalf-164289}
+
+2018.07.20 21:43:57:839 IST | Info       | CallP | CallP | +914032902101 | calgary | callhalf-164289 | 6:2
+
+        Session Completed
+
+2018.07.20 21:43:57:888 IST | Info       | CallP | SIP Endpoint | +914032902109 | PSTN | callhalf-164279:0 | 5:2
+
+        Processing Event: com.broadsoft.events.timer.TimerTimeOutEvent
+
+2018.07.20 21:43:57:888 IST | Info       | CallP | SIP Endpoint | +914032902109 | PSTN | callhalf-164279:0 | 5:2
+
+        call: 1  old State: RELEASED  new State: DEAD
+
+2018.07.20 21:43:57:888 IST | Info       | CallP | Call Manager | +914032902109 | PSTN | callhalf-164279 | 5:2
+
+        Processing Event: com.broadsoft.events.iwp.EndpointCompletedEvent {SipEndpoint.callhalf-164279:0,CHCallManager.callhalf-164279}
+
+2018.07.20 21:43:57:889 IST | Info       | CallP | CallP | +914032902109 | PSTN | callhalf-164279 | 5:2
+
+        Session Completed
+
+2018.07.20 21:43:57:922 IST | Info       | CallP | SIP Endpoint | +913602131002 | vancouver | callhalf-164277:0 | 5:2
+
+        Processing Event: com.broadsoft.events.timer.TimerTimeOutEvent
+
+2018.07.20 21:43:57:922 IST | Info       | CallP | SIP Endpoint | +913602131002 | vancouver | callhalf-164277:0 | 5:2
+
+        call: 1  old State: RELEASED  new State: DEAD
+
+2018.07.20 21:43:57:923 IST | Info       | CallP | Call Manager | +913602131002 | vancouver | callhalf-164277 | 5:2
+
+        Processing Event: com.broadsoft.events.iwp.EndpointCompletedEvent {SipEndpoint.callhalf-164277:0,CHCallManager.callhalf-164277}
+
+2018.07.20 21:43:57:923 IST | Info       | CallP | CallP | +913602131002 | vancouver | callhalf-164277 | 5:2
+
+        Session Completed
+
+2018.07.20 21:43:57:938 IST | Info       | CallP | SIP Endpoint | +913602131002 | PSTN | callhalf-164283:0 | 6:2
+
+        Processing Event: com.broadsoft.events.timer.TimerTimeOutEvent
+
+2018.07.20 21:43:57:938 IST | Info       | CallP | SIP Endpoint | +913602131002 | PSTN | callhalf-164283:0 | 6:2
+
+        call: 1  old State: RELEASED  new State: DEAD
+
+2018.07.20 21:43:57:938 IST | Info       | CallP | Call Manager | +913602131002 | PSTN | callhalf-164283 | 6:2
+
+        Processing Event: com.broadsoft.events.iwp.EndpointCompletedEvent {SipEndpoint.callhalf-164283:0,CHCallManager.callhalf-164283}
+
+2018.07.20 21:43:57:938 IST | Info       | CallP | CallP | +913602131002 | PSTN | callhalf-164283 | 6:2
+
+        Session Completed
+
+2018.07.20 21:43:58:529 IST | Warn       | CommonPersistency
+
+        ORACLE DATABASE: Listener up but unable to create a new connection: Listener refused the connection with the following error:
+ORA-12514, TNS:listener does not currently know of service requested in connect descriptor
+ 
+
+2018.07.20 21:43:58:530 IST | Warn       | CommonPersistency
+
+        ORACLE DATABASE: Listener down and mngmt connection invalid: null
+
+2018.07.20 21:43:58:530 IST | Info       | CommonPersistency
+
+        ORACLE SCHEMA: Setting new bweccr Schema Status to SCHEMA_NA
+        Reason: DB Access Status is DB_NA
+
+2018.07.20 21:43:58:530 IST | Info       | CommonPersistency
+
+        ORACLE SCHEMA: Setting new bwecllogs Schema Status to SCHEMA_NA
+        Reason: DB Access Status is DB_NA
+
+2018.07.20 21:43:58:530 IST | Info       | CommonPersistency
+
+        ORACLE SCHEMA: Setting new dbManagement Schema Status to SCHEMA_NA
+        Reason: DB Access Status is DB_NA
+
+2018.07.20 21:43:58:530 IST | Warn       | CommonPersistency
+
+        ORACLE DATABASE [ bwCentralizedDb ] Monitoring Summary:
+        ORACLE SERVICE [ bwCentralizedDb ]
+        Access Status:  DB_NA
+        Sites Status:   NO_CONNECTION
+        |HOST            |ROLE            |STATUS    |MODE                |SO STATUS         |FSFO STATUS       | SESSIONS|
+        |-----------------------------------------------------------------------------------------------------------------|
+        |10.242.168.82   |UNKNOWN         |UNKNOWN   |UNKNOWN             |                  |UNKNOWN           |0000     |
+
+        Monitoring Steps time elapsed:
+                Overall monitoring -> 2 ms
+                Connection validation (ping 10.242.168.82) -> 0 ms
+                Testing new connection (10.242.168.82) -> 2 ms
+                Monitoring schema bweccr -> 0 ms
+                Monitoring schema bwecllogs -> 0 ms
+                Monitoring schema dbManagement -> 0 ms
+
+
+        Universal Connection Pool for bwecllogs_10.242.168.82 Statistics: (AvailableConnectionsCount=0), (BorrowedConnectionsCount=0), (TotalConnectionsCount=0), (ConnectionsCreatedCount=0), (ConnectionsClosedCount=0), (AbandonedConnectionsCount=0), (LabeledConnectionsCount=0), (PendingRequestsCount=0), (RemainingPoolCapacityCount=200), (PeakConnectionsCount=0), (PeakConnectionWaitTime=0), (AverageBorrowedConnectionsCount=0), (AverageConnectionWaitTime=0), (CumulativeConnectionBorrowedCount=0), (CumulativeConnectionReturnedCount=0), (CumulativeConnectionUseTime=0), (CumulativeConnectionWaitTime=0), (CumulativeSuccessfulConnectionWaitCount=0),(CumulativeSuccessfulConnectionWaitTime=0), (CumulativeFailedConnectionWaitCount=0), (CumulativeFailedConnectionWaitTime=0), (SuccessfulAffinityBasedBorrowCount=0), (FailedAffinityBasedBorrowCount=0), (SuccessfulRCLBBasedBorrowCount=0), (FailedRCLBBasedBorrowCount=0), (FCFProcessingInfo=)
+
+        Universal Connection Pool for bweccr_10.242.168.82 Statistics: (AvailableConnectionsCount=0), (BorrowedConnectionsCount=0), (TotalConnectionsCount=0), (ConnectionsCreatedCount=0), (ConnectionsClosedCount=0), (AbandonedConnectionsCount=0), (LabeledConnectionsCount=0), (PendingRequestsCount=0), (RemainingPoolCapacityCount=200), (PeakConnectionsCount=0), (PeakConnectionWaitTime=0), (AverageBorrowedConnectionsCount=0), (AverageConnectionWaitTime=0), (CumulativeConnectionBorrowedCount=0), (CumulativeConnectionReturnedCount=0), (CumulativeConnectionUseTime=0), (CumulativeConnectionWaitTime=0), (CumulativeSuccessfulConnectionWaitCount=0),(CumulativeSuccessfulConnectionWaitTime=0), (CumulativeFailedConnectionWaitCount=0), (CumulativeFailedConnectionWaitTime=0), (SuccessfulAffinityBasedBorrowCount=0), (FailedAffinityBasedBorrowCount=0), (SuccessfulRCLBBasedBorrowCount=0), (FailedRCLBBasedBorrowCount=0), (FCFProcessingInfo=)
+
+2018.07.20 21:44:03:532 IST | Warn       | CommonPersistency
+
+        ORACLE DATABASE: Listener up but unable to create a new connection: Listener refused the connection with the following error:
+ORA-12514, TNS:listener does not currently know of service requested in connect descriptor
+ 
+
+2018.07.20 21:44:03:532 IST | Warn       | CommonPersistency
+
+        ORACLE DATABASE: Listener down and mngmt connection invalid: null
+
+2018.07.20 21:44:03:532 IST | Info       | CommonPersistency
+
+        ORACLE SCHEMA: Setting new bweccr Schema Status to SCHEMA_NA
+        Reason: DB Access Status is DB_NA
+
+2018.07.20 21:44:03:532 IST | Info       | CommonPersistency
+
+        ORACLE SCHEMA: Setting new bwecllogs Schema Status to SCHEMA_NA
+        Reason: DB Access Status is DB_NA
+
+2018.07.20 21:44:03:532 IST | Info       | CommonPersistency
+
+        ORACLE SCHEMA: Setting new dbManagement Schema Status to SCHEMA_NA
+        Reason: DB Access Status is DB_NA
+
+2018.07.20 21:44:03:532 IST | Warn       | CommonPersistency
+
+        ORACLE DATABASE [ bwCentralizedDb ] Monitoring Summary:
+        ORACLE SERVICE [ bwCentralizedDb ]
+        Access Status:  DB_NA
+        Sites Status:   NO_CONNECTION
+        |HOST            |ROLE            |STATUS    |MODE                |SO STATUS         |FSFO STATUS       | SESSIONS|
+        |-----------------------------------------------------------------------------------------------------------------|
+        |10.242.168.82   |UNKNOWN         |UNKNOWN   |UNKNOWN             |                  |UNKNOWN           |0000     |
+
+        Monitoring Steps time elapsed:
+                Overall monitoring -> 2 ms
+                Connection validation (ping 10.242.168.82) -> 0 ms
+                Testing new connection (10.242.168.82) -> 2 ms
+                Monitoring schema bweccr -> 0 ms
+                Monitoring schema bwecllogs -> 0 ms
+                Monitoring schema dbManagement -> 0 ms
+
+
+        Universal Connection Pool for bwecllogs_10.242.168.82 Statistics: (AvailableConnectionsCount=0), (BorrowedConnectionsCount=0), (TotalConnectionsCount=0), (ConnectionsCreatedCount=0), (ConnectionsClosedCount=0), (AbandonedConnectionsCount=0), (LabeledConnectionsCount=0), (PendingRequestsCount=0), (RemainingPoolCapacityCount=200), (PeakConnectionsCount=0), (PeakConnectionWaitTime=0), (AverageBorrowedConnectionsCount=0), (AverageConnectionWaitTime=0), (CumulativeConnectionBorrowedCount=0), (CumulativeConnectionReturnedCount=0), (CumulativeConnectionUseTime=0), (CumulativeConnectionWaitTime=0), (CumulativeSuccessfulConnectionWaitCount=0),(CumulativeSuccessfulConnectionWaitTime=0), (CumulativeFailedConnectionWaitCount=0), (CumulativeFailedConnectionWaitTime=0), (SuccessfulAffinityBasedBorrowCount=0), (FailedAffinityBasedBorrowCount=0), (SuccessfulRCLBBasedBorrowCount=0), (FailedRCLBBasedBorrowCount=0), (FCFProcessingInfo=)
+
+        Universal Connection Pool for bweccr_10.242.168.82 Statistics: (AvailableConnectionsCount=0), (BorrowedConnectionsCount=0), (TotalConnectionsCount=0), (ConnectionsCreatedCount=0), (ConnectionsClosedCount=0), (AbandonedConnectionsCount=0), (LabeledConnectionsCount=0), (PendingRequestsCount=0), (RemainingPoolCapacityCount=200), (PeakConnectionsCount=0), (PeakConnectionWaitTime=0), (AverageBorrowedConnectionsCount=0), (AverageConnectionWaitTime=0), (CumulativeConnectionBorrowedCount=0), (CumulativeConnectionReturnedCount=0), (CumulativeConnectionUseTime=0), (CumulativeConnectionWaitTime=0), (CumulativeSuccessfulConnectionWaitCount=0),(CumulativeSuccessfulConnectionWaitTime=0), (CumulativeFailedConnectionWaitCount=0), (CumulativeFailedConnectionWaitTime=0), (SuccessfulAffinityBasedBorrowCount=0), (FailedAffinityBasedBorrowCount=0), (SuccessfulRCLBBasedBorrowCount=0), (FailedRCLBBasedBorrowCount=0), (FCFProcessingInfo=)
+
+2018.07.20 21:44:08:534 IST | Warn       | CommonPersistency
+
+        ORACLE DATABASE: Listener up but unable to create a new connection: Listener refused the connection with the following error:
+ORA-12514, TNS:listener does not currently know of service requested in connect descriptor
+ 
+
+2018.07.20 21:44:08:534 IST | Warn       | CommonPersistency
+
+        ORACLE DATABASE: Listener down and mngmt connection invalid: null
+
+2018.07.20 21:44:08:534 IST | Info       | CommonPersistency
+
+        ORACLE SCHEMA: Setting new bweccr Schema Status to SCHEMA_NA
+        Reason: DB Access Status is DB_NA
+
+2018.07.20 21:44:08:534 IST | Info       | CommonPersistency
+
+        ORACLE SCHEMA: Setting new bwecllogs Schema Status to SCHEMA_NA
+        Reason: DB Access Status is DB_NA
+
+2018.07.20 21:44:08:534 IST | Info       | CommonPersistency
+
+        ORACLE SCHEMA: Setting new dbManagement Schema Status to SCHEMA_NA
+        Reason: DB Access Status is DB_NA
+
+2018.07.20 21:44:08:535 IST | Warn       | CommonPersistency
+
+        ORACLE DATABASE [ bwCentralizedDb ] Monitoring Summary:
+        ORACLE SERVICE [ bwCentralizedDb ]
+        Access Status:  DB_NA
+        Sites Status:   NO_CONNECTION
+        |HOST            |ROLE            |STATUS    |MODE                |SO STATUS         |FSFO STATUS       | SESSIONS|
+        |-----------------------------------------------------------------------------------------------------------------|
+        |10.242.168.82   |UNKNOWN         |UNKNOWN   |UNKNOWN             |                  |UNKNOWN           |0000     |
+
+        Monitoring Steps time elapsed:
+                Overall monitoring -> 1 ms
+                Connection validation (ping 10.242.168.82) -> 0 ms
+                Testing new connection (10.242.168.82) -> 1 ms
+                Monitoring schema bweccr -> 0 ms
+                Monitoring schema bwecllogs -> 0 ms
+                Monitoring schema dbManagement -> 0 ms
+
+
+        Universal Connection Pool for bwecllogs_10.242.168.82 Statistics: (AvailableConnectionsCount=0), (BorrowedConnectionsCount=0), (TotalConnectionsCount=0), (ConnectionsCreatedCount=0), (ConnectionsClosedCount=0), (AbandonedConnectionsCount=0), (LabeledConnectionsCount=0), (PendingRequestsCount=0), (RemainingPoolCapacityCount=200), (PeakConnectionsCount=0), (PeakConnectionWaitTime=0), (AverageBorrowedConnectionsCount=0), (AverageConnectionWaitTime=0), (CumulativeConnectionBorrowedCount=0), (CumulativeConnectionReturnedCount=0), (CumulativeConnectionUseTime=0), (CumulativeConnectionWaitTime=0), (CumulativeSuccessfulConnectionWaitCount=0),(CumulativeSuccessfulConnectionWaitTime=0), (CumulativeFailedConnectionWaitCount=0), (CumulativeFailedConnectionWaitTime=0), (SuccessfulAffinityBasedBorrowCount=0), (FailedAffinityBasedBorrowCount=0), (SuccessfulRCLBBasedBorrowCount=0), (FailedRCLBBasedBorrowCount=0), (FCFProcessingInfo=)
+
+        Universal Connection Pool for bweccr_10.242.168.82 Statistics: (AvailableConnectionsCount=0), (BorrowedConnectionsCount=0), (TotalConnectionsCount=0), (ConnectionsCreatedCount=0), (ConnectionsClosedCount=0), (AbandonedConnectionsCount=0), (LabeledConnectionsCount=0), (PendingRequestsCount=0), (RemainingPoolCapacityCount=200), (PeakConnectionsCount=0), (PeakConnectionWaitTime=0), (AverageBorrowedConnectionsCount=0), (AverageConnectionWaitTime=0), (CumulativeConnectionBorrowedCount=0), (CumulativeConnectionReturnedCount=0), (CumulativeConnectionUseTime=0), (CumulativeConnectionWaitTime=0), (CumulativeSuccessfulConnectionWaitCount=0),(CumulativeSuccessfulConnectionWaitTime=0), (CumulativeFailedConnectionWaitCount=0), (CumulativeFailedConnectionWaitTime=0), (SuccessfulAffinityBasedBorrowCount=0), (FailedAffinityBasedBorrowCount=0), (SuccessfulRCLBBasedBorrowCount=0), (FailedRCLBBasedBorrowCount=0), (FCFProcessingInfo=)
+
+2018.07.20 21:44:13:537 IST | Warn       | CommonPersistency
+
+        ORACLE DATABASE: Listener up but unable to create a new connection: Listener refused the connection with the following error:
+ORA-12514, TNS:listener does not currently know of service requested in connect descriptor
+ 
+
+2018.07.20 21:44:13:537 IST | Warn       | CommonPersistency
+
+        ORACLE DATABASE: Listener down and mngmt connection invalid: null
+
+2018.07.20 21:44:13:537 IST | Info       | CommonPersistency
+
+        ORACLE SCHEMA: Setting new bweccr Schema Status to SCHEMA_NA
+        Reason: DB Access Status is DB_NA
+
+2018.07.20 21:44:13:537 IST | Info       | CommonPersistency
+
+        ORACLE SCHEMA: Setting new bwecllogs Schema Status to SCHEMA_NA
+        Reason: DB Access Status is DB_NA
+
+2018.07.20 21:44:13:537 IST | Info       | CommonPersistency
+
+        ORACLE SCHEMA: Setting new dbManagement Schema Status to SCHEMA_NA
+        Reason: DB Access Status is DB_NA
+
+2018.07.20 21:44:13:537 IST | Warn       | CommonPersistency
+
+        ORACLE DATABASE [ bwCentralizedDb ] Monitoring Summary:
+        ORACLE SERVICE [ bwCentralizedDb ]
+        Access Status:  DB_NA
+        Sites Status:   NO_CONNECTION
+        |HOST            |ROLE            |STATUS    |MODE                |SO STATUS         |FSFO STATUS       | SESSIONS|
+        |-----------------------------------------------------------------------------------------------------------------|
+        |10.242.168.82   |UNKNOWN         |UNKNOWN   |UNKNOWN             |                  |UNKNOWN           |0000     |
+
+        Monitoring Steps time elapsed:
+                Overall monitoring -> 2 ms
+                Connection validation (ping 10.242.168.82) -> 0 ms
+                Testing new connection (10.242.168.82) -> 2 ms
+                Monitoring schema bweccr -> 0 ms
+                Monitoring schema bwecllogs -> 0 ms
+                Monitoring schema dbManagement -> 0 ms
+
+
+        Universal Connection Pool for bwecllogs_10.242.168.82 Statistics: (AvailableConnectionsCount=0), (BorrowedConnectionsCount=0), (TotalConnectionsCount=0), (ConnectionsCreatedCount=0), (ConnectionsClosedCount=0), (AbandonedConnectionsCount=0), (LabeledConnectionsCount=0), (PendingRequestsCount=0), (RemainingPoolCapacityCount=200), (PeakConnectionsCount=0), (PeakConnectionWaitTime=0), (AverageBorrowedConnectionsCount=0), (AverageConnectionWaitTime=0), (CumulativeConnectionBorrowedCount=0), (CumulativeConnectionReturnedCount=0), (CumulativeConnectionUseTime=0), (CumulativeConnectionWaitTime=0), (CumulativeSuccessfulConnectionWaitCount=0),(CumulativeSuccessfulConnectionWaitTime=0), (CumulativeFailedConnectionWaitCount=0), (CumulativeFailedConnectionWaitTime=0), (SuccessfulAffinityBasedBorrowCount=0), (FailedAffinityBasedBorrowCount=0), (SuccessfulRCLBBasedBorrowCount=0), (FailedRCLBBasedBorrowCount=0), (FCFProcessingInfo=)
+
+        Universal Connection Pool for bweccr_10.242.168.82 Statistics: (AvailableConnectionsCount=0), (BorrowedConnectionsCount=0), (TotalConnectionsCount=0), (ConnectionsCreatedCount=0), (ConnectionsClosedCount=0), (AbandonedConnectionsCount=0), (LabeledConnectionsCount=0), (PendingRequestsCount=0), (RemainingPoolCapacityCount=200), (PeakConnectionsCount=0), (PeakConnectionWaitTime=0), (AverageBorrowedConnectionsCount=0), (AverageConnectionWaitTime=0), (CumulativeConnectionBorrowedCount=0), (CumulativeConnectionReturnedCount=0), (CumulativeConnectionUseTime=0), (CumulativeConnectionWaitTime=0), (CumulativeSuccessfulConnectionWaitCount=0),(CumulativeSuccessfulConnectionWaitTime=0), (CumulativeFailedConnectionWaitCount=0), (CumulativeFailedConnectionWaitTime=0), (SuccessfulAffinityBasedBorrowCount=0), (FailedAffinityBasedBorrowCount=0), (SuccessfulRCLBBasedBorrowCount=0), (FailedRCLBBasedBorrowCount=0), (FCFProcessingInfo=)
+
+2018.07.20 21:44:18:539 IST | Warn       | CommonPersistency
+
+        ORACLE DATABASE: Listener up but unable to create a new connection: Listener refused the connection with the following error:
+ORA-12514, TNS:listener does not currently know of service requested in connect descriptor
+ 
+
+2018.07.20 21:44:18:539 IST | Warn       | CommonPersistency
+
+        ORACLE DATABASE: Listener down and mngmt connection invalid: null
+
+2018.07.20 21:44:18:539 IST | Info       | CommonPersistency
+
+        ORACLE SCHEMA: Setting new bweccr Schema Status to SCHEMA_NA
+        Reason: DB Access Status is DB_NA
+
+2018.07.20 21:44:18:539 IST | Info       | CommonPersistency
+
+        ORACLE SCHEMA: Setting new bwecllogs Schema Status to SCHEMA_NA
+        Reason: DB Access Status is DB_NA
+
+2018.07.20 21:44:18:539 IST | Info       | CommonPersistency
+
+        ORACLE SCHEMA: Setting new dbManagement Schema Status to SCHEMA_NA
+        Reason: DB Access Status is DB_NA
+
+2018.07.20 21:44:18:539 IST | Warn       | CommonPersistency
+
+        ORACLE DATABASE [ bwCentralizedDb ] Monitoring Summary:
+        ORACLE SERVICE [ bwCentralizedDb ]
+        Access Status:  DB_NA
+        Sites Status:   NO_CONNECTION
+        |HOST            |ROLE            |STATUS    |MODE                |SO STATUS         |FSFO STATUS       | SESSIONS|
+        |-----------------------------------------------------------------------------------------------------------------|
+        |10.242.168.82   |UNKNOWN         |UNKNOWN   |UNKNOWN             |                  |UNKNOWN           |0000     |
+
+        Monitoring Steps time elapsed:
+                Overall monitoring -> 2 ms
+                Connection validation (ping 10.242.168.82) -> 0 ms
+                Testing new connection (10.242.168.82) -> 2 ms
+                Monitoring schema bweccr -> 0 ms
+                Monitoring schema bwecllogs -> 0 ms
+                Monitoring schema dbManagement -> 0 ms
+
+
+        Universal Connection Pool for bwecllogs_10.242.168.82 Statistics: (AvailableConnectionsCount=0), (BorrowedConnectionsCount=0), (TotalConnectionsCount=0), (ConnectionsCreatedCount=0), (ConnectionsClosedCount=0), (AbandonedConnectionsCount=0), (LabeledConnectionsCount=0), (PendingRequestsCount=0), (RemainingPoolCapacityCount=200), (PeakConnectionsCount=0), (PeakConnectionWaitTime=0), (AverageBorrowedConnectionsCount=0), (AverageConnectionWaitTime=0), (CumulativeConnectionBorrowedCount=0), (CumulativeConnectionReturnedCount=0), (CumulativeConnectionUseTime=0), (CumulativeConnectionWaitTime=0), (CumulativeSuccessfulConnectionWaitCount=0),(CumulativeSuccessfulConnectionWaitTime=0), (CumulativeFailedConnectionWaitCount=0), (CumulativeFailedConnectionWaitTime=0), (SuccessfulAffinityBasedBorrowCount=0), (FailedAffinityBasedBorrowCount=0), (SuccessfulRCLBBasedBorrowCount=0), (FailedRCLBBasedBorrowCount=0), (FCFProcessingInfo=)
+
+        Universal Connection Pool for bweccr_10.242.168.82 Statistics: (AvailableConnectionsCount=0), (BorrowedConnectionsCount=0), (TotalConnectionsCount=0), (ConnectionsCreatedCount=0), (ConnectionsClosedCount=0), (AbandonedConnectionsCount=0), (LabeledConnectionsCount=0), (PendingRequestsCount=0), (RemainingPoolCapacityCount=200), (PeakConnectionsCount=0), (PeakConnectionWaitTime=0), (AverageBorrowedConnectionsCount=0), (AverageConnectionWaitTime=0), (CumulativeConnectionBorrowedCount=0), (CumulativeConnectionReturnedCount=0), (CumulativeConnectionUseTime=0), (CumulativeConnectionWaitTime=0), (CumulativeSuccessfulConnectionWaitCount=0),(CumulativeSuccessfulConnectionWaitTime=0), (CumulativeFailedConnectionWaitCount=0), (CumulativeFailedConnectionWaitTime=0), (SuccessfulAffinityBasedBorrowCount=0), (FailedAffinityBasedBorrowCount=0), (SuccessfulRCLBBasedBorrowCount=0), (FailedRCLBBasedBorrowCount=0), (FCFProcessingInfo=)
+
+2018.07.20 21:44:21:167 IST | FieldDebug | RedundancyLink
+
+        Redundancy Heartbeat information:
+  Counter           : 3840
+  Round Trip Average: 0 ms
+  Low Water Mark    : 0 ms
+  High Water Mark   : 24 ms
+  Missing Counter   : 0
+
+2018.07.20 21:44:23:541 IST | Warn       | CommonPersistency
+
+        ORACLE DATABASE: Listener up but unable to create a new connection: Listener refused the connection with the following error:
+ORA-12514, TNS:listener does not currently know of service requested in connect descriptor
+ 
+
+2018.07.20 21:44:23:541 IST | Warn       | CommonPersistency
+
+        ORACLE DATABASE: Listener down and mngmt connection invalid: null
+
+2018.07.20 21:44:23:541 IST | Info       | CommonPersistency
+
+        ORACLE SCHEMA: Setting new bweccr Schema Status to SCHEMA_NA
+        Reason: DB Access Status is DB_NA
+
+2018.07.20 21:44:23:541 IST | Info       | CommonPersistency
+
+        ORACLE SCHEMA: Setting new bwecllogs Schema Status to SCHEMA_NA
+        Reason: DB Access Status is DB_NA
+
+2018.07.20 21:44:23:541 IST | Info       | CommonPersistency
+
+        ORACLE SCHEMA: Setting new dbManagement Schema Status to SCHEMA_NA
+        Reason: DB Access Status is DB_NA
+
+2018.07.20 21:44:23:542 IST | Warn       | CommonPersistency
+
+        ORACLE DATABASE [ bwCentralizedDb ] Monitoring Summary:
+        ORACLE SERVICE [ bwCentralizedDb ]
+        Access Status:  DB_NA
+        Sites Status:   NO_CONNECTION
+        |HOST            |ROLE            |STATUS    |MODE                |SO STATUS         |FSFO STATUS       | SESSIONS|
+        |-----------------------------------------------------------------------------------------------------------------|
+        |10.242.168.82   |UNKNOWN         |UNKNOWN   |UNKNOWN             |                  |UNKNOWN           |0000     |
+
+        Monitoring Steps time elapsed:
+                Overall monitoring -> 2 ms
+                Connection validation (ping 10.242.168.82) -> 1 ms
+                Testing new connection (10.242.168.82) -> 1 ms
+                Monitoring schema bweccr -> 0 ms
+                Monitoring schema bwecllogs -> 0 ms
+                Monitoring schema dbManagement -> 0 ms
+
+
+        Universal Connection Pool for bwecllogs_10.242.168.82 Statistics: (AvailableConnectionsCount=0), (BorrowedConnectionsCount=0), (TotalConnectionsCount=0), (ConnectionsCreatedCount=0), (ConnectionsClosedCount=0), (AbandonedConnectionsCount=0), (LabeledConnectionsCount=0), (PendingRequestsCount=0), (RemainingPoolCapacityCount=200), (PeakConnectionsCount=0), (PeakConnectionWaitTime=0), (AverageBorrowedConnectionsCount=0), (AverageConnectionWaitTime=0), (CumulativeConnectionBorrowedCount=0), (CumulativeConnectionReturnedCount=0), (CumulativeConnectionUseTime=0), (CumulativeConnectionWaitTime=0), (CumulativeSuccessfulConnectionWaitCount=0),(CumulativeSuccessfulConnectionWaitTime=0), (CumulativeFailedConnectionWaitCount=0), (CumulativeFailedConnectionWaitTime=0), (SuccessfulAffinityBasedBorrowCount=0), (FailedAffinityBasedBorrowCount=0), (SuccessfulRCLBBasedBorrowCount=0), (FailedRCLBBasedBorrowCount=0), (FCFProcessingInfo=)
+
+        Universal Connection Pool for bweccr_10.242.168.82 Statistics: (AvailableConnectionsCount=0), (BorrowedConnectionsCount=0), (TotalConnectionsCount=0), (ConnectionsCreatedCount=0), (ConnectionsClosedCount=0), (AbandonedConnectionsCount=0), (LabeledConnectionsCount=0), (PendingRequestsCount=0), (RemainingPoolCapacityCount=200), (PeakConnectionsCount=0), (PeakConnectionWaitTime=0), (AverageBorrowedConnectionsCount=0), (AverageConnectionWaitTime=0), (CumulativeConnectionBorrowedCount=0), (CumulativeConnectionReturnedCount=0), (CumulativeConnectionUseTime=0), (CumulativeConnectionWaitTime=0), (CumulativeSuccessfulConnectionWaitCount=0),(CumulativeSuccessfulConnectionWaitTime=0), (CumulativeFailedConnectionWaitCount=0), (CumulativeFailedConnectionWaitTime=0), (SuccessfulAffinityBasedBorrowCount=0), (FailedAffinityBasedBorrowCount=0), (SuccessfulRCLBBasedBorrowCount=0), (FailedRCLBBasedBorrowCount=0), (FCFProcessingInfo=)
+
+2018.07.20 21:44:28:544 IST | Warn       | CommonPersistency
+
+        ORACLE DATABASE: Listener up but unable to create a new connection: Listener refused the connection with the following error:
+ORA-12514, TNS:listener does not currently know of service requested in connect descriptor
+ 
+
+2018.07.20 21:44:28:544 IST | Warn       | CommonPersistency
+
+        ORACLE DATABASE: Listener down and mngmt connection invalid: null
+
+2018.07.20 21:44:28:544 IST | Info       | CommonPersistency
+
+        ORACLE SCHEMA: Setting new bweccr Schema Status to SCHEMA_NA
+        Reason: DB Access Status is DB_NA
+
+2018.07.20 21:44:28:544 IST | Info       | CommonPersistency
+
+        ORACLE SCHEMA: Setting new bwecllogs Schema Status to SCHEMA_NA
+        Reason: DB Access Status is DB_NA
+
+2018.07.20 21:44:28:544 IST | Info       | CommonPersistency
+
+        ORACLE SCHEMA: Setting new dbManagement Schema Status to SCHEMA_NA
+        Reason: DB Access Status is DB_NA
+
+2018.07.20 21:44:28:544 IST | Warn       | CommonPersistency
+
+        ORACLE DATABASE [ bwCentralizedDb ] Monitoring Summary:
+        ORACLE SERVICE [ bwCentralizedDb ]
+        Access Status:  DB_NA
+        Sites Status:   NO_CONNECTION
+        |HOST            |ROLE            |STATUS    |MODE                |SO STATUS         |FSFO STATUS       | SESSIONS|
+        |-----------------------------------------------------------------------------------------------------------------|
+        |10.242.168.82   |UNKNOWN         |UNKNOWN   |UNKNOWN             |                  |UNKNOWN           |0000     |
+
+        Monitoring Steps time elapsed:
+                Overall monitoring -> 2 ms
+                Connection validation (ping 10.242.168.82) -> 0 ms
+                Testing new connection (10.242.168.82) -> 2 ms
+                Monitoring schema bweccr -> 0 ms
+                Monitoring schema bwecllogs -> 0 ms
+                Monitoring schema dbManagement -> 0 ms
+
+
+        Universal Connection Pool for bwecllogs_10.242.168.82 Statistics: (AvailableConnectionsCount=0), (BorrowedConnectionsCount=0), (TotalConnectionsCount=0), (ConnectionsCreatedCount=0), (ConnectionsClosedCount=0), (AbandonedConnectionsCount=0), (LabeledConnectionsCount=0), (PendingRequestsCount=0), (RemainingPoolCapacityCount=200), (PeakConnectionsCount=0), (PeakConnectionWaitTime=0), (AverageBorrowedConnectionsCount=0), (AverageConnectionWaitTime=0), (CumulativeConnectionBorrowedCount=0), (CumulativeConnectionReturnedCount=0), (CumulativeConnectionUseTime=0), (CumulativeConnectionWaitTime=0), (CumulativeSuccessfulConnectionWaitCount=0),(CumulativeSuccessfulConnectionWaitTime=0), (CumulativeFailedConnectionWaitCount=0), (CumulativeFailedConnectionWaitTime=0), (SuccessfulAffinityBasedBorrowCount=0), (FailedAffinityBasedBorrowCount=0), (SuccessfulRCLBBasedBorrowCount=0), (FailedRCLBBasedBorrowCount=0), (FCFProcessingInfo=)
+
+        Universal Connection Pool for bweccr_10.242.168.82 Statistics: (AvailableConnectionsCount=0), (BorrowedConnectionsCount=0), (TotalConnectionsCount=0), (ConnectionsCreatedCount=0), (ConnectionsClosedCount=0), (AbandonedConnectionsCount=0), (LabeledConnectionsCount=0), (PendingRequestsCount=0), (RemainingPoolCapacityCount=200), (PeakConnectionsCount=0), (PeakConnectionWaitTime=0), (AverageBorrowedConnectionsCount=0), (AverageConnectionWaitTime=0), (CumulativeConnectionBorrowedCount=0), (CumulativeConnectionReturnedCount=0), (CumulativeConnectionUseTime=0), (CumulativeConnectionWaitTime=0), (CumulativeSuccessfulConnectionWaitCount=0),(CumulativeSuccessfulConnectionWaitTime=0), (CumulativeFailedConnectionWaitCount=0), (CumulativeFailedConnectionWaitTime=0), (SuccessfulAffinityBasedBorrowCount=0), (FailedAffinityBasedBorrowCount=0), (SuccessfulRCLBBasedBorrowCount=0), (FailedRCLBBasedBorrowCount=0), (FCFProcessingInfo=)
+
+2018.07.20 21:44:33:547 IST | Warn       | CommonPersistency
+
+        ORACLE DATABASE: Listener up but unable to create a new connection: Listener refused the connection with the following error:
+ORA-12514, TNS:listener does not currently know of service requested in connect descriptor
+ 
+
+2018.07.20 21:44:33:547 IST | Warn       | CommonPersistency
+
+        ORACLE DATABASE: Listener down and mngmt connection invalid: null
+
+2018.07.20 21:44:33:547 IST | Info       | CommonPersistency
+
+        ORACLE SCHEMA: Setting new bweccr Schema Status to SCHEMA_NA
+        Reason: DB Access Status is DB_NA
+
+2018.07.20 21:44:33:547 IST | Info       | CommonPersistency
+
+        ORACLE SCHEMA: Setting new bwecllogs Schema Status to SCHEMA_NA
+        Reason: DB Access Status is DB_NA
+
+2018.07.20 21:44:33:547 IST | Info       | CommonPersistency
+
+        ORACLE SCHEMA: Setting new dbManagement Schema Status to SCHEMA_NA
+        Reason: DB Access Status is DB_NA
+
+2018.07.20 21:44:33:547 IST | Warn       | CommonPersistency
+
+        ORACLE DATABASE [ bwCentralizedDb ] Monitoring Summary:
+        ORACLE SERVICE [ bwCentralizedDb ]
+        Access Status:  DB_NA
+        Sites Status:   NO_CONNECTION
+        |HOST            |ROLE            |STATUS    |MODE                |SO STATUS         |FSFO STATUS       | SESSIONS|
+        |-----------------------------------------------------------------------------------------------------------------|
+        |10.242.168.82   |UNKNOWN         |UNKNOWN   |UNKNOWN             |                  |UNKNOWN           |0000     |
+
+        Monitoring Steps time elapsed:
+                Overall monitoring -> 3 ms
+                Connection validation (ping 10.242.168.82) -> 1 ms
+                Testing new connection (10.242.168.82) -> 2 ms
+                Monitoring schema bweccr -> 0 ms
+                Monitoring schema bwecllogs -> 0 ms
+                Monitoring schema dbManagement -> 0 ms
+
+
+        Universal Connection Pool for bwecllogs_10.242.168.82 Statistics: (AvailableConnectionsCount=0), (BorrowedConnectionsCount=0), (TotalConnectionsCount=0), (ConnectionsCreatedCount=0), (ConnectionsClosedCount=0), (AbandonedConnectionsCount=0), (LabeledConnectionsCount=0), (PendingRequestsCount=0), (RemainingPoolCapacityCount=200), (PeakConnectionsCount=0), (PeakConnectionWaitTime=0), (AverageBorrowedConnectionsCount=0), (AverageConnectionWaitTime=0), (CumulativeConnectionBorrowedCount=0), (CumulativeConnectionReturnedCount=0), (CumulativeConnectionUseTime=0), (CumulativeConnectionWaitTime=0), (CumulativeSuccessfulConnectionWaitCount=0),(CumulativeSuccessfulConnectionWaitTime=0), (CumulativeFailedConnectionWaitCount=0), (CumulativeFailedConnectionWaitTime=0), (SuccessfulAffinityBasedBorrowCount=0), (FailedAffinityBasedBorrowCount=0), (SuccessfulRCLBBasedBorrowCount=0), (FailedRCLBBasedBorrowCount=0), (FCFProcessingInfo=)
+
+        Universal Connection Pool for bweccr_10.242.168.82 Statistics: (AvailableConnectionsCount=0), (BorrowedConnectionsCount=0), (TotalConnectionsCount=0), (ConnectionsCreatedCount=0), (ConnectionsClosedCount=0), (AbandonedConnectionsCount=0), (LabeledConnectionsCount=0), (PendingRequestsCount=0), (RemainingPoolCapacityCount=200), (PeakConnectionsCount=0), (PeakConnectionWaitTime=0), (AverageBorrowedConnectionsCount=0), (AverageConnectionWaitTime=0), (CumulativeConnectionBorrowedCount=0), (CumulativeConnectionReturnedCount=0), (CumulativeConnectionUseTime=0), (CumulativeConnectionWaitTime=0), (CumulativeSuccessfulConnectionWaitCount=0),(CumulativeSuccessfulConnectionWaitTime=0), (CumulativeFailedConnectionWaitCount=0), (CumulativeFailedConnectionWaitTime=0), (SuccessfulAffinityBasedBorrowCount=0), (FailedAffinityBasedBorrowCount=0), (SuccessfulRCLBBasedBorrowCount=0), (FailedRCLBBasedBorrowCount=0), (FCFProcessingInfo=)
+
+2018.07.20 21:44:38:549 IST | Warn       | CommonPersistency
+
+        ORACLE DATABASE: Listener up but unable to create a new connection: Listener refused the connection with the following error:
+ORA-12514, TNS:listener does not currently know of service requested in connect descriptor
+ 
+
+2018.07.20 21:44:38:549 IST | Warn       | CommonPersistency
+
+        ORACLE DATABASE: Listener down and mngmt connection invalid: null
+
+2018.07.20 21:44:38:549 IST | Info       | CommonPersistency
+
+        ORACLE SCHEMA: Setting new bweccr Schema Status to SCHEMA_NA
+        Reason: DB Access Status is DB_NA
+
+2018.07.20 21:44:38:549 IST | Info       | CommonPersistency
+
+        ORACLE SCHEMA: Setting new bwecllogs Schema Status to SCHEMA_NA
+        Reason: DB Access Status is DB_NA
+
+2018.07.20 21:44:38:549 IST | Info       | CommonPersistency
+
+        ORACLE SCHEMA: Setting new dbManagement Schema Status to SCHEMA_NA
+        Reason: DB Access Status is DB_NA
+
+2018.07.20 21:44:38:549 IST | Warn       | CommonPersistency
+
+        ORACLE DATABASE [ bwCentralizedDb ] Monitoring Summary:
+        ORACLE SERVICE [ bwCentralizedDb ]
+        Access Status:  DB_NA
+        Sites Status:   NO_CONNECTION
+        |HOST            |ROLE            |STATUS    |MODE                |SO STATUS         |FSFO STATUS       | SESSIONS|
+        |-----------------------------------------------------------------------------------------------------------------|
+        |10.242.168.82   |UNKNOWN         |UNKNOWN   |UNKNOWN             |                  |UNKNOWN           |0000     |
+
+        Monitoring Steps time elapsed:
+                Overall monitoring -> 2 ms
+                Connection validation (ping 10.242.168.82) -> 1 ms
+                Testing new connection (10.242.168.82) -> 1 ms
+                Monitoring schema bweccr -> 0 ms
+                Monitoring schema bwecllogs -> 0 ms
+                Monitoring schema dbManagement -> 0 ms
+
+
+        Universal Connection Pool for bwecllogs_10.242.168.82 Statistics: (AvailableConnectionsCount=0), (BorrowedConnectionsCount=0), (TotalConnectionsCount=0), (ConnectionsCreatedCount=0), (ConnectionsClosedCount=0), (AbandonedConnectionsCount=0), (LabeledConnectionsCount=0), (PendingRequestsCount=0), (RemainingPoolCapacityCount=200), (PeakConnectionsCount=0), (PeakConnectionWaitTime=0), (AverageBorrowedConnectionsCount=0), (AverageConnectionWaitTime=0), (CumulativeConnectionBorrowedCount=0), (CumulativeConnectionReturnedCount=0), (CumulativeConnectionUseTime=0), (CumulativeConnectionWaitTime=0), (CumulativeSuccessfulConnectionWaitCount=0),(CumulativeSuccessfulConnectionWaitTime=0), (CumulativeFailedConnectionWaitCount=0), (CumulativeFailedConnectionWaitTime=0), (SuccessfulAffinityBasedBorrowCount=0), (FailedAffinityBasedBorrowCount=0), (SuccessfulRCLBBasedBorrowCount=0), (FailedRCLBBasedBorrowCount=0), (FCFProcessingInfo=)
+
+        Universal Connection Pool for bweccr_10.242.168.82 Statistics: (AvailableConnectionsCount=0), (BorrowedConnectionsCount=0), (TotalConnectionsCount=0), (ConnectionsCreatedCount=0), (ConnectionsClosedCount=0), (AbandonedConnectionsCount=0), (LabeledConnectionsCount=0), (PendingRequestsCount=0), (RemainingPoolCapacityCount=200), (PeakConnectionsCount=0), (PeakConnectionWaitTime=0), (AverageBorrowedConnectionsCount=0), (AverageConnectionWaitTime=0), (CumulativeConnectionBorrowedCount=0), (CumulativeConnectionReturnedCount=0), (CumulativeConnectionUseTime=0), (CumulativeConnectionWaitTime=0), (CumulativeSuccessfulConnectionWaitCount=0),(CumulativeSuccessfulConnectionWaitTime=0), (CumulativeFailedConnectionWaitCount=0), (CumulativeFailedConnectionWaitTime=0), (SuccessfulAffinityBasedBorrowCount=0), (FailedAffinityBasedBorrowCount=0), (SuccessfulRCLBBasedBorrowCount=0), (FailedRCLBBasedBorrowCount=0), (FCFProcessingInfo=)
+
+2018.07.20 21:44:43:551 IST | Warn       | CommonPersistency
+
+        ORACLE DATABASE: Listener up but unable to create a new connection: Listener refused the connection with the following error:
+ORA-12514, TNS:listener does not currently know of service requested in connect descriptor
+ 
+
+2018.07.20 21:44:43:551 IST | Warn       | CommonPersistency
+
+        ORACLE DATABASE: Listener down and mngmt connection invalid: null
+
+2018.07.20 21:44:43:551 IST | Info       | CommonPersistency
+
+        ORACLE SCHEMA: Setting new bweccr Schema Status to SCHEMA_NA
+        Reason: DB Access Status is DB_NA
+
+2018.07.20 21:44:43:551 IST | Info       | CommonPersistency
+
+        ORACLE SCHEMA: Setting new bwecllogs Schema Status to SCHEMA_NA
+        Reason: DB Access Status is DB_NA
+
+2018.07.20 21:44:43:551 IST | Info       | CommonPersistency
+
+        ORACLE SCHEMA: Setting new dbManagement Schema Status to SCHEMA_NA
+        Reason: DB Access Status is DB_NA
+
+2018.07.20 21:44:43:552 IST | Warn       | CommonPersistency
+
+        ORACLE DATABASE [ bwCentralizedDb ] Monitoring Summary:
+        ORACLE SERVICE [ bwCentralizedDb ]
+        Access Status:  DB_NA
+        Sites Status:   NO_CONNECTION
+        |HOST            |ROLE            |STATUS    |MODE                |SO STATUS         |FSFO STATUS       | SESSIONS|
+        |-----------------------------------------------------------------------------------------------------------------|
+        |10.242.168.82   |UNKNOWN         |UNKNOWN   |UNKNOWN             |                  |UNKNOWN           |0000     |
+
+        Monitoring Steps time elapsed:
+                Overall monitoring -> 2 ms
+                Connection validation (ping 10.242.168.82) -> 1 ms
+                Testing new connection (10.242.168.82) -> 1 ms
+                Monitoring schema bweccr -> 0 ms
+                Monitoring schema bwecllogs -> 0 ms
+                Monitoring schema dbManagement -> 0 ms
+
+
+        Universal Connection Pool for bwecllogs_10.242.168.82 Statistics: (AvailableConnectionsCount=0), (BorrowedConnectionsCount=0), (TotalConnectionsCount=0), (ConnectionsCreatedCount=0), (ConnectionsClosedCount=0), (AbandonedConnectionsCount=0), (LabeledConnectionsCount=0), (PendingRequestsCount=0), (RemainingPoolCapacityCount=200), (PeakConnectionsCount=0), (PeakConnectionWaitTime=0), (AverageBorrowedConnectionsCount=0), (AverageConnectionWaitTime=0), (CumulativeConnectionBorrowedCount=0), (CumulativeConnectionReturnedCount=0), (CumulativeConnectionUseTime=0), (CumulativeConnectionWaitTime=0), (CumulativeSuccessfulConnectionWaitCount=0),(CumulativeSuccessfulConnectionWaitTime=0), (CumulativeFailedConnectionWaitCount=0), (CumulativeFailedConnectionWaitTime=0), (SuccessfulAffinityBasedBorrowCount=0), (FailedAffinityBasedBorrowCount=0), (SuccessfulRCLBBasedBorrowCount=0), (FailedRCLBBasedBorrowCount=0), (FCFProcessingInfo=)
+
+        Universal Connection Pool for bweccr_10.242.168.82 Statistics: (AvailableConnectionsCount=0), (BorrowedConnectionsCount=0), (TotalConnectionsCount=0), (ConnectionsCreatedCount=0), (ConnectionsClosedCount=0), (AbandonedConnectionsCount=0), (LabeledConnectionsCount=0), (PendingRequestsCount=0), (RemainingPoolCapacityCount=200), (PeakConnectionsCount=0), (PeakConnectionWaitTime=0), (AverageBorrowedConnectionsCount=0), (AverageConnectionWaitTime=0), (CumulativeConnectionBorrowedCount=0), (CumulativeConnectionReturnedCount=0), (CumulativeConnectionUseTime=0), (CumulativeConnectionWaitTime=0), (CumulativeSuccessfulConnectionWaitCount=0),(CumulativeSuccessfulConnectionWaitTime=0), (CumulativeFailedConnectionWaitCount=0), (CumulativeFailedConnectionWaitTime=0), (SuccessfulAffinityBasedBorrowCount=0), (FailedAffinityBasedBorrowCount=0), (SuccessfulRCLBBasedBorrowCount=0), (FailedRCLBBasedBorrowCount=0), (FCFProcessingInfo=)
+
+^C
+bwadmin@che-bw3-as1$ 
