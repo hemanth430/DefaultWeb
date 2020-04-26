@@ -1,10 +1,10 @@
 15k 
 
-15k 
+9k 
 
-1000 cash
+750 cash
 
-ddddd 
+64176 
 
 10k 
 
@@ -45,7 +45,7 @@ Final Card - 227062 + 31155 + 44000(mayPL) - 50000 = 252217
 
 ================
 
-Testing git 		
+Testing git , with update
 
 
 
